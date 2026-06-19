@@ -11,6 +11,28 @@
   --shadow:0 1px 2px rgba(22,32,46,.06),0 8px 24px rgba(22,32,46,.08);
   --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
+
+/* ダークモード：OSの設定(prefers-color-scheme)を検出して自動で配色を上書き */
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#e6edf6;        /* 文字（明色） */
+    --ink-2:#aab8c8;      /* 副文字 */
+    --paper:#0f1722;      /* 背景（暗紺） */
+    --card:#19222e;
+    --line:#2a3744;
+    --tokyo:#6699cc;      /* 東大の淡青（据え置き） */
+    --tokyo-deep:#6fa3d8; /* リンク・見出し（暗背景で見えるよう明るく） */
+    --tokyo-fill:#1d2c3f;
+    --mute:#8593a3;--mute-fill:#232e3c;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.4);
+  }
+  /* 変数で拾えないハードコード色の個別上書き */
+  header{background:rgba(15,23,34,.82)}
+  .btn-primary{background:var(--tokyo-deep);color:#fff} /* --ink が明色化するため白文字の潰れを回避 */
+  input[type=text]{background:#141d28}
+  .toast{background:#3a2f17;color:#f0d9a0}
+}
+
 *{box-sizing:border-box}
 html,body{margin:0}
 body{
