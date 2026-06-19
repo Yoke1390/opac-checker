@@ -9,7 +9,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <title>東大蔵書チェッカー</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316202e'/%3E%3Cg fill='%236699cc'%3E%3Crect x='8' y='9' width='2' height='14'/%3E%3Crect x='12' y='9' width='1' height='14'/%3E%3Crect x='15' y='9' width='3' height='14'/%3E%3Crect x='20' y='9' width='1' height='14'/%3E%3Crect x='23' y='9' width='2' height='14'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="icon" href="icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="icon.svg" />
+<link rel="manifest" href="manifest.json" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -72,5 +74,10 @@
 
 <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 <script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
+</script>
 </body>
 </html>
