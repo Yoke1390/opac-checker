@@ -103,8 +103,9 @@
   .actions{padding:14px 18px;display:flex;flex-direction:column;gap:9px}
   a.linkbtn{display:flex;align-items:center;justify-content:space-between;gap:10px;text-decoration:none;font-weight:600;font-size:14px;padding:13px 15px;border-radius:12px;border:1px solid var(--line);color:var(--ink)}
   a.linkbtn.primary{background:var(--tokyo-deep);color:#fff;border-color:var(--tokyo-deep)}
+  a.linkbtn.amazon{background:#ff9900;color:#16202e;border-color:#e88c00}
   a.linkbtn .arr{opacity:.6}
-  a.linkbtn.primary .arr{opacity:.85}
+  a.linkbtn.primary .arr,a.linkbtn.amazon .arr{opacity:.85}
 
   footer{margin-top:28px;font-size:11.5px;color:var(--mute);line-height:1.7;text-align:center}
   footer a{color:var(--tokyo-deep)}
@@ -285,17 +286,21 @@ function formatPubdate(p){
   return m[1] + (m[2] ? '.'+m[2] : '');
 }
 function renderActions(isbn13){
-  const i10 = isbn13to10(isbn13);
   els.actions.innerHTML='';
   // 東大OPAC（一次情報・詳細検索のISBN索引を名指し）
   els.actions.appendChild(linkBtn(
     'https://opac.dl.itc.u-tokyo.ac.jp/opac/opac_search/?amode=2&smode=1&con1_exp=isbn&kywd1_exp=' + isbn13 + '&dpmc_exp%5B%5D=all',
-    '東大OPACで開く', true
+    '東大OPACで開く', 'primary'
+  ));
+  // Amazon（本カテゴリをISBNで検索）
+  els.actions.appendChild(linkBtn(
+    'https://www.amazon.co.jp/s?i=stripbooks&rh=p_66%3A' + isbn13,
+    'Amazonで検索', 'amazon'
   ));
 }
-function linkBtn(href, label, primary){
+function linkBtn(href, label, variant){
   const a=document.createElement('a'); a.href=href; a.target='_blank'; a.rel='noopener';
-  a.className='linkbtn'+(primary?' primary':'');
+  a.className='linkbtn'+(variant?(' '+variant):'');
   a.innerHTML = `<span>${label}</span><span class="arr">↗</span>`;
   return a;
 }
