@@ -27,8 +27,8 @@
     --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.4);
   }
   /* 変数で拾えないハードコード色の個別上書き */
-  header{background:rgba(15,23,34,.82)}
-  .btn-primary{background:var(--tokyo-deep);color:#fff} /* --ink が明色化するため白文字の潰れを回避 */
+  header{background:rgba(11,15,22,.82)} /* 本文よりさらに暗いほぼ黒のヘッダー */
+  .btn-primary{background:linear-gradient(180deg,#262f3b,#1b232e);color:#fff} /* 青ではなく紺寄りグラファイト＋白文字 */
   input[type=text]{background:#141d28}
   .toast{background:#3a2f17;color:#f0d9a0}
 }
