@@ -1,0 +1,4646 @@
+
+
+
+
+
+	
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-type" content="text/css" />
+	<meta http-equiv="content-script-type" content="text/javascript" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="ROBOTS" content="NONE" />
+	<meta name="ROBOTS" content="NOINDEX,NOFOLLOW" />
+	<meta name="ROBOTS" content="NOARCHIVE" />
+	
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	
+	<meta name="description" content="Online Public Access Catalog">
+	<!-- css: bootstrap mega menu -->
+	<link rel="stylesheet" type="text/css" href="/media/css/yamm.css?20240722">
+	<link rel="stylesheet" type="text/css" href="/media/css/yamm_custom.css?20240722">
+
+	<!-- css: sidr for smartphone side menu -->
+	<link rel="stylesheet" type="text/css" href="/media/css/jquery.sidr.light.css?20240722">
+	<link rel="stylesheet" type="text/css" href="/media/css/jquery.sidr.light_custom.css?20240722">
+
+	<!-- css: sidr for smartphone side menu -->
+	<link rel="stylesheet" type="text/css" href="/media/js/owl/assets/owl.carousel.css?20240722">
+
+	<!-- css: opac theme -->
+	<link rel="stylesheet" type="text/css" href="/media/css/opac_icon.css?20240722">
+	<link rel="stylesheet" type="text/css" href="/media/css/opac_icon_custom.css?20240722">
+	<link rel="stylesheet" type="text/css" href="/media/css/opac_style.css?20240722">
+	<link rel="stylesheet" type="text/css" href="/media/css/opac_style_custom.css?20240722">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	
+
+	<link rel="shortcut icon" href="/media/img/favicon.ico" />
+
+	<script type="text/javascript">
+	//<![CDATA[
+		 var media_url="/media/"; // MEDIA_URL
+	 //]]>
+	</script>
+	
+	
+		<link rel="search" type="application/opensearchdescription+xml" title="UTokyo OPAC" href="/media/txt/opensearchopac.xml" />
+	
+
+
+
+		
+	<link href="/media/css/opac_common.css?20240722" rel="stylesheet" type="text/css" />
+	<link href="/media/css/opac_common_custom.css?20240722" rel="stylesheet" type="text/css" />
+
+		<link href="/media/css/opac_003.css?20240722" rel="stylesheet" type="text/css" />
+		<link href="/media/css/opac_003_custom.css?20240722" rel="stylesheet" type="text/css" />
+		
+		<link href="/media/css/myopac_calendar.css?20240722" rel="stylesheet" type="text/css" />
+		<link href="/media/css/myopac_calendar_custom.css?20240722" rel="stylesheet" type="text/css" />
+		<link href="/media/css/ecats.datepicker.css?20240722" rel="stylesheet" type="text/css" />
+		<link href="/media/css/ecats.datepicker_custom.css?20240722" rel="stylesheet" type="text/css" />
+		
+	
+
+
+	
+
+
+
+		
+	<script type="text/javascript">
+	//<![CDATA[
+		var media_url="/media/"; // MEDIA_URL
+	//]]>
+	</script>
+	<script type="text/javascript" src="/media/js/jquery.min.js?20240722" charset="UTF-8"></script>
+	<script>jQuery.ajaxPrefilter( function( s ) { if ( s.crossDomain ) { s.contents.script = false; } } );</script>
+	<script type="text/javascript" src="/media/js_c/jquery-ui.min.js?20240722" charset="UTF-8"></script>
+	<script type="text/javascript" src="/media/js_c/longPressBlocker.js?20240722" charset="UTF-8"></script>
+	<script type="text/javascript" src="/media/js_c/opac_common.js?20240722" charset="UTF-8"></script>
+	<script type="text/javascript" src="/media/js_c/overlib.js?20240722" charset="UTF-8"></script>
+	<script type="text/javascript" src="/media/js_c/wordBreak.js?20240722" charset="UTF-8"></script>
+	<script type="text/javascript" src="/media/js_c/jquery.ajaxSuggest.1.5.4.js" charset="utf-8"></script>
+	<script type="text/javascript" src="/media/js_c/opac_search.js?20240722" charset="UTF-8"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script type="text/javascript" src="/media/js/bootstrap.min.js?20240722" charset="utf-8"></script>
+	<!-- Multiple Carousel owl-carousel jQuery plugin-->
+	<script type="text/javascript" src="/media/js/owl/owl.carousel.min.js?20240722" charset="utf-8"></script>
+	<!--Match Box Height-->
+	<script type="text/javascript" src="/media/js/jquery.matchHeight.js?20240722" charset="utf-8"></script>
+	<!-- To This Page Top -->
+	<script type="text/javascript" src="/media/js/pagetop.js?20240722" charset="utf-8"></script>
+
+		
+		<script type="text/javascript" src="/media/js_c/myopac_common.js?20240722" charset="utf-8"></script>
+		
+		<script type="text/javascript" src="/media/js_c/jquery.tagcloud.js?20240722" charset="utf-8"></script>
+		
+		<script type="text/javascript" src="/media/js_c/jquery.datePicker.js?20240722" charset="UTF-8"></script>
+		
+		<script type="text/javascript" src="/media/js_c/opac_details.js?20240722" charset="UTF-8"></script>
+		
+			<script type="text/javascript" src="/media/js_c/jRate.js?20240722" charset="UTF-8"></script>
+		
+		
+		<script type="text/javascript" src="/media/js_c/aws_node.js?20240722"></script>
+		
+		<script type="text/javascript">
+			if (navigator.userAgent.toLowerCase().indexOf("firefox") > -1) {
+				if (document.referrer.startsWith(location.protocol + "//" + location.host)) {
+					history.pushState(null, null, null);
+				}
+				window.addEventListener("popstate", function() {
+					location.replace(document.referrer);
+				});
+			}
+		</script>
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- title -->
+
+
+	<title>UTokyo OPAC</title>
+
+</head>
+<body class="opac_ja">
+<div id="sidr-wrapper">
+<!-- header -->
+    <input type="hidden" name="moji" value="" id="moji" disabled="disabled">
+	<header id="header" class="hidden-print">
+	
+		<div class="container-fluid">
+	
+			
+			<div class="row">
+				<div class="col-xs-7 col-md-7"><h1 id="logo"><a href="/opac/opac_search/?lang=0">
+					
+						<img src="/media/img/opac_logo_left.png" alt="東京大学OPAC" />
+					
+				</h1></a></div>
+				<div class="col-xs-5 col-md-5">
+					<p id="logo2_img">
+						<span class="logo2">
+							
+								<a href="https://www.u-tokyo.ac.jp/ja/index.html" target=”_blank”>
+							
+							<img src="/media/img/UTlogo_MyOPAC.png" alt=""/></a>
+						</span>
+					</p>
+					<span class="us_login_btn">
+						
+							<button id="btn-login" type="button" class="btn btn-login pull-right" onclick="location.href='/opac/opac_search/?loginMode=disp&amp;lang=0&amp;opkey=&amp;cmode=0&amp;smode=0'"><span class="icon-opac_login size-large"></span>MyOPAC ログイン</button>
+					   	
+					</span>
+					<div id="header-help-nav" class="clearfix">
+						<a href="/help/c_jp/index.html"  onclick="HelpClick(this.href);return false;" id="nav-help" class="btn">ヘルプ<br /><span class="icon-opac_help size-large"></span></a>
+						<a href="/media/htm/key-k-e.html" onclick="MojiOpen(this.href);return false;" id="nav-input" class="btn hidden-xs">入力補助<br /><span class="icon-opac_input size-large"></span></a>
+						<a href="/opac/opac_search/" onclick="LangChange(this.href, '0');return false;" id="nav-english" class="btn">English<br /><span class="icon-opac_english size-large"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- navigation -->
+
+	<nav id="global-nav" class="navbar navbar-inverse yamm clearfix hidden-print" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header opac-left-menu">
+				
+				<div class="navbar-brand text-only"><a class="navbar-brand-btn" href="/opac/opac_search/?lang=0">HOME</a></div>
+				<div class="navbar-brand add_service"><a class="navbar-brand-btn" href="/opac/ask/?lang=0">
+                                <span class="icon-opac_faq size-large"></span> <span class="nav-text">ASK</a></div>
+				
+
+                                <div class="dropdown yamm-fw navbar-brand">
+                                        <a href="#" id="us_service" class="dropdown-toggle navbar-brand-btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="icon-opac_user-service size-large"></span> <span class="nav-text">MyOPACサービス</span></a>
+                                        <ul class="dropdown-menu" aria-labelledby="us_service" id="us_service-menu">
+                                                <li>
+                                                        <div class="yamm-content">
+                                                                <div class="row">
+                                                                        
+                                                                        
+                                                                                
+                                                                                
+                                                                                        
+                                                                                                
+                                                                                                        
+                                                                                                        <ul class="col-lg-4">
+                                                                                                        
+                                                                                                                <li><a href="/opac/odr_stat/?lang=0">貸出・予約状況照会</a></li>
+                                                                                                        
+                                                                                                                <li><a href="/opac/ill/?lang=0">学外への文献複写・貸借申込</a></li>
+                                                                                                        
+                                                                                                                <li><a href="/opac/ill/?reqCode=list&amp;lang=0">文献複写・貸借申込状況照会</a></li>
+                                                                                                        
+                                                                                                
+                                                                                        
+                                                                                                
+                                                                                                        
+                                                                                                                </ul>
+                                                                                                        
+                                                                                                        <ul class="col-lg-4">
+                                                                                                        
+                                                                                                                <li><a href="/opac/bok/?lang=0">図書購入申込（各自予算）</a></li>
+                                                                                                        
+                                                                                                                <li><a href="/opac/bok_req/?lang=0">図書購入リクエスト</a></li>
+                                                                                                        
+                                                                                                                <li><a href="/opac/bok/?reqCode=list&amp;lang=0">図書購入申込状況照会</a></li>
+                                                                                                        
+                                                                                                
+                                                                                        
+                                                                                                
+                                                                                                        
+                                                                                                                </ul>
+                                                                                                        
+                                                                                                        <ul class="col-lg-4">
+                                                                                                        
+                                                                                                                <li><a href="/opac/password/?lang=0">パスワード変更（図書館アカウントのみ）</a></li>
+                                                                                                        
+                                                                                                                <li><a href="/opac/us_info/?lang=0">利用者情報編集</a></li>
+                                                                                                        
+                                                                                                
+                                                                                        
+                                                                                </ul>
+                                                                                
+                                                                                
+                                                                        
+                                                                </div>
+                                                        </div>
+                                                </li>
+                                        </ul><!--/.dropdown-menu-->
+                                </div><!--/.dropdown-->
+				<div class="navbar-brand add_service"><a class="navbar-brand-btn" href="/opac/newbook/?lang=0&codeno=1">
+                                <span class="icon-opac_new size-large"></span> <span class="nav-text">新着図書</span></a></div>
+			</div><!--/.opac-left-menu-->
+
+			
+				
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed navbar-toggle-btn" data-toggle="collapse" data-target="#opac-extra-link-menu" aria-expanded="false">
+							<span class="glyphicon glyphicon-option-horizontal"></span>
+							<span class="nav-text hidden-md hidden-lg">その他</span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="opac-extra-link-menu">
+						<ul class="nav navbar-nav opac-right-menu">
+							
+								<li>
+									<a href="https://www.lib.u-tokyo.ac.jp/ja/library/contents/database" target="_blank" rel="noopener noreferrer">データベース一覧</a>
+								</li>
+							
+								<li>
+									<a href="http://tokyo.summon.serialssolutions.com/jp/#!/" target="_blank" rel="noopener noreferrer">TREE（まとめて検索）</a>
+								</li>
+							
+								<li>
+									<a href="https://repository.dl.itc.u-tokyo.ac.jp/" target="_blank" rel="noopener noreferrer">Repository</a>
+								</li>
+							
+								<li>
+									<a href="https://da.dl.itc.u-tokyo.ac.jp/portal/" target="_blank" rel="noopener noreferrer">デジタルアーカイブ</a>
+								</li>
+							
+								<li>
+									<a href="https://www.lib.u-tokyo.ac.jp/ja" target="_blank" rel="noopener noreferrer">附属図書館</a>
+								</li>
+							
+						</ul><!--/.opac-right-menu-->
+					</div><!--/#opac-extra-link-menu-->
+				
+			
+		</div>
+	</nav>
+<!-- /navigation -->
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	<!--ボックスの高さを揃える-->
+	$('.panel-body').matchHeight();
+
+	$("#lib_service").click(function(event){
+		<!--ハンバーガーメニューのプルダウンが開いているときにメニュークリックされたら-->
+		if($('#opac-extra-link-menu').hasClass('collapse in')) {
+		<!--閉じるだけして抜ける-->
+		$('#opac-extra-link-menu').collapse('hide');
+		event.preventDefault();
+		}
+	});
+	$("#us_service").click(function(event){
+		<!--ハンバーガーメニューのプルダウンが開いているときにメニュークリックされたら-->
+		if($('#opac-extra-link-menu').hasClass('collapse in')) {
+		<!--閉じるだけして抜ける-->
+		$('#opac-extra-link-menu').collapse('hide');
+		event.preventDefault();
+		}
+	});
+	$('#global-nav').on('shown.bs.dropdown', function() {
+		$('.dropdown-backdrop').remove();
+	});
+});
+</script>
+
+
+
+<div id="dialog_search" class="head_search"></div><!-- /dialog -->
+	<div id="content-wrapper">
+		
+		<div id="contens">
+			<div class="container-fluid maCont clearfix">
+
+
+
+		<div id="opac_search">
+			<div id="flame_search" class="clearfix">
+			
+				<div class="sub_header">
+					
+						
+
+					
+				</div>
+
+				
+				
+
+<!-- service_block -->
+<div class="service_block">
+
+
+
+
+</div>
+<!-- /service_block -->
+
+				
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+<!-- boxSea -->
+<div class="boxSea">
+
+<form id="search" method="post" action="/opac/opac_search/" onsubmit="return false">
+<div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='b3f8ef9b186d42435230f76c4e213570' /></div>
+
+<div id="search_opac">
+
+	<input type="hidden" name="lang" value="0" />
+	<input type="hidden" name="opkey" value="" />
+	<input type="hidden" name="tikey" value="" />
+	<input type="hidden" name="reqCode" value="" />
+	<input type="hidden" name="smode" value="0" />
+	<input type="hidden" name="amode" value="1" />
+	<input type="hidden" name="appname" value="Firefox" />
+	<input type="hidden" name="version" value="152.0" />
+	<input type="hidden" name="cmode" value="0" />
+	<input type="hidden" name="NII_BOOK_CD" value="10" />
+	<input type="hidden" name="NII_SERIAL_CD" value="20" />
+	
+		<input type="hidden" name="csid" id="add_csid" value="tokyo" />
+	
+
+	<div id="content">
+		
+
+		<div id="archive-search">
+			<ul class="nav nav-tabs" role="tablist">
+				
+					<li class="active " onclick="searchTabClick('0');searchAddTabClick('0');"><a id="search_tab_0" href="#panel_0" data-target="#panel_0, #panel_advanced_0" data-toggle="tab">東京大学OPAC</a></li>
+				
+					<li class="hidden-xs" onclick="searchTabClick('5');searchAddTabClick('5');"><a id="search_tab_5" href="#panel_5" data-target="#panel_5, #panel_advanced_5" data-toggle="tab">CiNii Books</a></li>
+				
+					<li class="hidden-xs" onclick="searchTabClick('3');searchAddTabClick('3');"><a id="search_tab_3" href="#panel_3" data-target="#panel_3, #panel_advanced_3" data-toggle="tab">CiNii Research</a></li>
+				
+					<li class="hidden-xs" onclick="searchTabClick('4');searchAddTabClick('4');"><a id="search_tab_4" href="#panel_4" data-target="#panel_4, #panel_advanced_4" data-toggle="tab">IRDB</a></li>
+				
+					<li class="hidden-xs" onclick="searchTabClick('12');searchAddTabClick('12');"><a id="search_tab_12" href="#panel_12" data-target="#panel_12, #panel_advanced_12" data-toggle="tab">国立国会図書館サーチ</a></li>
+				
+				
+					
+						<li class="hidden-xs" onclick="searchTabClick('21');searchAddTabClick('21');"><a id="search_tab_21" href="#panel_21" data-target="#panel_21, #panel_advanced_21" data-toggle="tab">WorldCat</a></li>
+					
+				
+				
+					<li class="visible-xs dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">その他の検索<span class="glyphicon glyphicon-menu-down"></span></a>
+						<ul class="dropdown-menu">
+							
+								
+							
+								
+									<li onclick="searchTabClick('5');searchAddTabClick('5');"><a href="#panel_5" data-target="#panel_5, #panel_advanced_5" data-toggle="tab">CiNii Books</a></li>
+								
+							
+								
+									<li onclick="searchTabClick('3');searchAddTabClick('3');"><a href="#panel_3" data-target="#panel_3, #panel_advanced_3" data-toggle="tab">CiNii Research</a></li>
+								
+							
+								
+									<li onclick="searchTabClick('4');searchAddTabClick('4');"><a href="#panel_4" data-target="#panel_4, #panel_advanced_4" data-toggle="tab">IRDB</a></li>
+								
+							
+								
+									<li onclick="searchTabClick('12');searchAddTabClick('12');"><a href="#panel_12" data-target="#panel_12, #panel_advanced_12" data-toggle="tab">国立国会図書館サーチ</a></li>
+								
+							
+							
+								
+									<li onclick="searchTabClick('21');searchAddTabClick('21');"><a href="#panel_21" data-target="#panel_21, #panel_advanced_21" data-toggle="tab">WorldCat</a></li>
+								
+							
+						</ul>
+					</li>
+				
+			</ul>
+			<div class="panel panel-primary panel-search">
+				<div class="tab-content">
+					
+						
+						<div id="panel_0" class="tab-pane in active panel-heading">
+							<h2 class="panel-heading-title text-inline"><span class="icon-opac_book-search size-large"></span> 東京大学OPAC</h2>
+							<p class="panel-heading-text text-inline">東京大学が所蔵する図書や雑誌、電子ジャーナル・電子ブックを検索します。</p>
+						</div>
+					
+						
+						<div id="panel_5" class="tab-pane panel-heading">
+							<h2 class="panel-heading-title text-inline"><span class="icon-opac_book-search size-large"></span> CiNii Books</h2>
+							<p class="panel-heading-text text-inline">日本国内の大学図書館等が所蔵する図書や雑誌を検索します。</p>
+						</div>
+					
+						
+						<div id="panel_3" class="tab-pane panel-heading">
+							<h2 class="panel-heading-title text-inline"><span class="icon-opac_book-search size-large"></span> CiNii Research</h2>
+							<p class="panel-heading-text text-inline">日本国内の学術論文を検索します。</p>
+						</div>
+					
+						
+						<div id="panel_4" class="tab-pane panel-heading">
+							<h2 class="panel-heading-title text-inline"><span class="icon-opac_book-search size-large"></span> IRDB</h2>
+							<p class="panel-heading-text text-inline">日本国内の学術機関が公開する学術成果(学位論文、紀要、学術論文等)を検索します。</p>
+						</div>
+					
+						
+						<div id="panel_12" class="tab-pane panel-heading">
+							<h2 class="panel-heading-title text-inline"><span class="icon-opac_book-search size-large"></span> 国立国会図書館サーチ</h2>
+							<p class="panel-heading-text text-inline">国立国会図書館および公共図書館等の蔵書を検索します。</p>
+						</div>
+					
+					
+						
+						<div id="panel_21" class="tab-pane panel-heading">
+							<h2 class="panel-heading-title text-inline"><span class="icon-opac_book-search size-large"></span> WorldCat</h2>
+							<p class="panel-heading-text text-inline">海外の図書館が所蔵する図書や雑誌を検索します。</p>
+						</div>
+					
+				</div>
+				<div class="panel-body opac-panel-body-bg">
+					
+					
+					<ul id="searchmode_tab" class="nav nav-pills" role="tablist">
+						<li role="presentation" id="tab_simple" class="active"><a href="#simple_area" aria-controls="home" role="tab" data-toggle="tab" onclick="modeTabClick('0');modeAddTabClick('0');">簡易検索</a></li>
+						<li role="presentation" id="tab_advanced"><a href="#advanced_area" aria-controls="profile" role="tab" data-toggle="tab" onclick="modeTabClick('1');modeAddTabClick('1');">詳細検索</a></li>
+						
+					</ul>
+					<div id="search_pubmed"></div>
+					<div class="tab-content">
+						<div id="simple_area" class="tab-pane in active">
+							
+							
+							<div id="search-simple-area" class="search-simple">
+								<form>
+									<input id="text_kywd" class="search-simple-input" maxlength="256" name="kywd" value="プリンシプルオブプログラミング" type="text" onkeydown="return EnterEvent(event.keyCode, 'basic', 'search');" />
+									<button type="button" class="btn btn-primary search-simple-btn-find" onclick="SearchClick('basic', 'search');return false;"><span class="icon-opac_search size-small"></span><span class="hidden-xs">検索</span></button>
+									<button type="button" class="btn btn-clear search-simple-btn-clear" onclick="clearClick('basic',20,6,'all','alkey','pubkey', 'search');return false;"><span class="glyphicon glyphicon-erase"></span><span class="hidden-xs">クリア</span></button>
+								</form>
+							</div>
+							
+								
+									<div id="panel_simple_21">
+										<script type="text/javascript">
+//<![CDATA[
+	function w_search(fm){
+		var	pre_method = fm.method;
+		var pre_action = fm.action;
+		fm.method = "get";
+		fm.action = "https://www.worldcat.org/search";
+		fm.target = "_blank";
+		fm.submit();
+		document.activeElement.blur();
+		fm.method = pre_method;
+		fm.action = pre_action;
+		fm.target = "_self";
+	}
+
+	function w_enterev(keycode,fm){
+		if ( keycode == '13' ) {
+			w_search(fm);
+			return false;
+		}
+	}
+
+	function w_init(){
+		var txt = $("#text_kywd").val();
+		$("#wcatquery").val(txt);
+		$("#wcatquery").focus();
+	}
+//]]>
+</script>
+<style type="text/css">
+	.wcbutton {
+	}
+	.wccontainer {
+	}
+	.wcspace {
+	}
+</style>
+
+<div class="sscontainer">
+	<form id="worldcat">
+		<input type="hidden" name="qt" value="worldcat_org_all" />
+		<input id="lang" name="lang" type="hidden" value="ja" />
+		<div class="liList clearfix">
+			<img style="vertical-align:middle;" title="WorldCat" alt="WorldCat" src="/media/img_c/wclogo.gif" /><span> WorldCat内で検索します</span>
+		</div>
+		<div class="wcspace">
+			<input type="text" name="q" id="wcatquery" size="40" value="" class="search-simple-input" onKeyDown="return w_enterev(event.keyCode, document.getElementById('worldcat'));">
+			<button type="button" class="btn btn-primary search-simple-btn-find" onclick="w_search(document.getElementById('worldcat'));"><span class="icon-opac_search size-small"></span><span class="hidden-xs">検索</span></button>
+			<button type="button" class="btn btn-clear search-simple-btn-clear" onclick="$('#wcatquery').val('');$('#wcatquery').focus();"><span class="glyphicon glyphicon-erase"></span><span class="hidden-xs">クリア</span></button>
+		</div>
+	</form>
+</div>
+									</div>
+								
+							
+						</div>
+						<div id="advanced_area" class="tab-pane">
+							<div class="tab-content">
+								
+									
+									<div id="panel_advanced_0" class="tab-pane in active">
+										
+
+
+
+<div class="local-advanced">
+	<div class="search-advance-form">
+		<h3 class="search-advance-title">検索条件</h3>
+		<div class="row">
+			<div class="col-md-9 search-condition">
+				<ul class="list-inline list-inline-xs">
+					<li class="sc-l">&nbsp;</li>
+					<li class="sc-m">
+						<input type="text" maxlength="256" id="text_kywd1" name="kywd1_exp" value="" onkeydown="return EnterEvent(event.keyCode,'expart', 'search');" />
+					</li>
+					<li class="sc-r">
+						<select name="con1_exp">
+						    
+						    	<option value="all" selected="selected">全ての項目から</option>
+						    
+						    	<option value="titlekey_ja">書名に左の語を含む</option>
+						    
+						    	<option value="ftitlekey">書名(完全形)</option>
+						    
+						    	<option value="alkey">著者名に左の語を含む</option>
+						    
+						    	<option value="ptblkey">シリーズ名に左の語を含む</option>
+						    
+						    	<option value="pubkey">出版社・出版者</option>
+						    
+						    	<option value="shkey">件名</option>
+						    
+						    	<option value="volkey">巻次</option>
+						    
+						    	<option value="isbn">ISBN</option>
+						    
+						    	<option value="issn">ISSN</option>
+						    
+						    	<option value="callno">請求記号</option>
+						    
+						    	<option value="bookid">登録番号</option>
+						    
+						    	<option value="ncid">NACSIS-ID</option>
+						    
+						    	<option value="bibid">書誌ID</option>
+						    
+						    	<option value="clskey">標準分類</option>
+						    
+						    	<option value="cls">所蔵分類</option>
+						    
+						    	<option value="lccn">LCCN</option>
+						    
+						    	<option value="ndlcn">NDLCN・NDLPN</option>
+						    
+						    	<option value="coden">CODEN</option>
+						    
+						    	<option value="nbn">全国書誌番号</option>
+						    
+						    	<option value="cmnid">共通コード</option>
+						    
+						    	<option value="othn">その他のコード</option>
+						    
+					    </select>
+					</li>
+				</ul>
+				<ul class="list-inline list-inline-xs">
+					<li class="sc-l">
+						<select name="op2_exp">
+						    
+						    	<option value="AND" selected="selected">AND</option>
+						    
+						    	<option value="OR">OR</option>
+						    
+						    	<option value="NOT">NOT</option>
+						    
+					    </select>
+					</li>
+					<li class="sc-m">
+						<input type="text" maxlength="256" id="text_kywd2" name="kywd2_exp" value="" onkeydown="return EnterEvent(event.keyCode,'expart', 'search');" />
+					</li>
+					<li class="sc-r">
+						<select name="con2_exp">
+						    
+						    	<option value="titlekey_ja">書名に左の語を含む</option>
+						    
+						    	<option value="ftitlekey">書名(完全形)</option>
+						    
+						    	<option value="alkey" selected="selected">著者名に左の語を含む</option>
+						    
+						    	<option value="ptblkey">シリーズ名に左の語を含む</option>
+						    
+						    	<option value="pubkey">出版社・出版者</option>
+						    
+						    	<option value="shkey">件名</option>
+						    
+						    	<option value="volkey">巻次</option>
+						    
+						    	<option value="isbn">ISBN</option>
+						    
+						    	<option value="issn">ISSN</option>
+						    
+						    	<option value="callno">請求記号</option>
+						    
+						    	<option value="bookid">登録番号</option>
+						    
+						    	<option value="ncid">NACSIS-ID</option>
+						    
+						    	<option value="bibid">書誌ID</option>
+						    
+						    	<option value="clskey">標準分類</option>
+						    
+						    	<option value="cls">所蔵分類</option>
+						    
+						    	<option value="lccn">LCCN</option>
+						    
+						    	<option value="ndlcn">NDLCN・NDLPN</option>
+						    
+						    	<option value="coden">CODEN</option>
+						    
+						    	<option value="nbn">全国書誌番号</option>
+						    
+						    	<option value="cmnid">共通コード</option>
+						    
+						    	<option value="othn">その他のコード</option>
+						    
+					    </select>
+					</li>
+				</ul>
+				<ul class="list-inline list-inline-xs">
+					<li class="sc-l">
+						<select name="op3_exp">
+						    
+						    	<option value="AND" selected="selected">AND</option>
+						    
+						    	<option value="OR">OR</option>
+						    
+						    	<option value="NOT">NOT</option>
+						    
+					    </select>
+					</li>
+					<li class="sc-m">
+						<input type="text" maxlength="256"  id="text_kywd3" name="kywd3_exp" value="" onkeydown="return EnterEvent(event.keyCode,'expart', 'search');" />
+					</li>
+					<li class="sc-r">
+						<select name="con3_exp">
+						    
+						    	<option value="titlekey_ja">書名に左の語を含む</option>
+						    
+						    	<option value="ftitlekey">書名(完全形)</option>
+						    
+						    	<option value="alkey">著者名に左の語を含む</option>
+						    
+						    	<option value="ptblkey">シリーズ名に左の語を含む</option>
+						    
+						    	<option value="pubkey" selected="selected">出版社・出版者</option>
+						    
+						    	<option value="shkey">件名</option>
+						    
+						    	<option value="volkey">巻次</option>
+						    
+						    	<option value="isbn">ISBN</option>
+						    
+						    	<option value="issn">ISSN</option>
+						    
+						    	<option value="callno">請求記号</option>
+						    
+						    	<option value="bookid">登録番号</option>
+						    
+						    	<option value="ncid">NACSIS-ID</option>
+						    
+						    	<option value="bibid">書誌ID</option>
+						    
+						    	<option value="clskey">標準分類</option>
+						    
+						    	<option value="cls">所蔵分類</option>
+						    
+						    	<option value="lccn">LCCN</option>
+						    
+						    	<option value="ndlcn">NDLCN・NDLPN</option>
+						    
+						    	<option value="coden">CODEN</option>
+						    
+						    	<option value="nbn">全国書誌番号</option>
+						    
+						    	<option value="cmnid">共通コード</option>
+						    
+						    	<option value="othn">その他のコード</option>
+						    
+					    </select>
+					</li>
+				</ul>
+				
+					<div class="sort_num_area">
+						<ul class="list-inline list-mgn-l">
+						
+							<li>
+								<label for="sort_exp">
+									<span class="sort-label">並び順:</span>
+								</label>
+								<span class="sort-list">
+									<select name="sort_exp">
+										
+						        			<option value="0">関連度</option>
+						      			
+						        			<option value="1">書　名(昇順)</option>
+						      			
+						        			<option value="2">書　名(降順)</option>
+						      			
+						        			<option value="3">著者名(昇順)</option>
+						      			
+						        			<option value="4">著者名(降順)</option>
+						      			
+						        			<option value="5">出版年(昇順)</option>
+						      			
+						        			<option value="6" selected="selected">出版年(降順)</option>
+						      			
+						    		</select>
+								</span>
+							</li>
+						
+						
+							<li>
+								<label for="disp_exp">
+									<span class="sort-label">一覧表示件数:</span>
+								</label>
+								<span class="sort-list">
+									<select name="disp_exp">
+									    
+									    	<option value="20" selected="selected">20</option>
+									    
+									    	<option value="50">50</option>
+									    
+									    	<option value="100">100</option>
+									    
+									    	<option value="200">200</option>
+									    
+									    	<option value="500">500</option>
+									    
+								    </select>
+								</span>
+							</li>
+						
+						</ul>
+					</div><!--/.sort-num-area-->
+				
+			</div><!--/#search-condition-->
+			<div class="col-md-3">
+				<div class="search-ad-btn">
+					<button type="button" class="btn btn-primary btn-left-square" onclick="SearchClick('expart', 'search');return false;"><span class="icon-opac_search size-small"></span>検索</button>
+					<button type="button" class="btn btn-clear" onclick="clearClick('expart',20,6,'all','alkey','pubkey', 'search');return false;"><span class="glyphicon glyphicon-erase"></span>クリア</button>
+				</div><!--/.search-ad-btn-->
+			</div>
+		</div><!--/.row-->
+		<div class="row">
+			
+			
+				<div class="col-sm-3 col-md-3">
+					<h3 class="search-advance-title">資料区分</h3>
+					<ul>
+						
+							<li>
+								<label for="file_exp1">
+									<input id="file_exp1" type="checkbox" name="file_exp[]" value="1"/>
+									図書<input type="hidden" name="vfile_exp" value="10" /><input type="hidden" name="jf_exp" value="" />
+								</label>
+							</li>
+						
+							<li>
+								<label for="file_exp2">
+									<input id="file_exp2" type="checkbox" name="file_exp[]" value="2"/>
+									和図書<input type="hidden" name="vfile_exp" value="10" /><input type="hidden" name="jf_exp" value="1" />
+								</label>
+							</li>
+						
+							<li>
+								<label for="file_exp3">
+									<input id="file_exp3" type="checkbox" name="file_exp[]" value="3"/>
+									洋図書<input type="hidden" name="vfile_exp" value="10" /><input type="hidden" name="jf_exp" value="2" />
+								</label>
+							</li>
+						
+							<li>
+								<label for="file_exp4">
+									<input id="file_exp4" type="checkbox" name="file_exp[]" value="4"/>
+									AV<input type="hidden" name="vfile_exp" value="11,21" /><input type="hidden" name="jf_exp" value="" />
+								</label>
+							</li>
+						
+							<li>
+								<label for="file_exp5">
+									<input id="file_exp5" type="checkbox" name="file_exp[]" value="5"/>
+									雑誌<input type="hidden" name="vfile_exp" value="20" /><input type="hidden" name="jf_exp" value="" />
+								</label>
+							</li>
+						
+							<li>
+								<label for="file_exp6">
+									<input id="file_exp6" type="checkbox" name="file_exp[]" value="6"/>
+									和雑誌<input type="hidden" name="vfile_exp" value="20" /><input type="hidden" name="jf_exp" value="1" />
+								</label>
+							</li>
+						
+							<li>
+								<label for="file_exp7">
+									<input id="file_exp7" type="checkbox" name="file_exp[]" value="7"/>
+									洋雑誌<input type="hidden" name="vfile_exp" value="20" /><input type="hidden" name="jf_exp" value="2" />
+								</label>
+							</li>
+						
+							<li>
+								<label for="file_exp11">
+									<input id="file_exp11" type="checkbox" name="file_exp[]" value="11"/>
+									電子ブック<input type="hidden" name="vfile_exp" value="19" /><input type="hidden" name="jf_exp" value="" />
+								</label>
+							</li>
+						
+							<li>
+								<label for="file_exp9">
+									<input id="file_exp9" type="checkbox" name="file_exp[]" value="9"/>
+									電子ジャーナル<input type="hidden" name="vfile_exp" value="29" /><input type="hidden" name="jf_exp" value="" />
+								</label>
+							</li>
+						
+					</ul>
+				</div><!--/#select-group-->
+			
+			
+				<div class="col-sm-3 col-md-3 select-campus">
+					<h3 class="search-advance-title">キャンパス</h3>
+					<select multiple="multiple" size="10" name="dpmc_exp[]" >
+					    
+						    
+						    	<option value="all" selected="selected">(全学)</option>
+						    
+					    
+						    
+						    	<option value="本郷キャンパス">本郷キャンパス</option>
+						    
+					    
+						    
+						    	<option value="弥生キャンパス">弥生キャンパス</option>
+						    
+					    
+						    
+						    	<option value="駒場Iキャンパス">駒場Iキャンパス</option>
+						    
+					    
+						    
+						    	<option value="駒場IIキャンパス">駒場IIキャンパス</option>
+						    
+					    
+						    
+						    	<option value="柏キャンパス">柏キャンパス</option>
+						    
+					    
+						    
+						    	<option value="白金キャンパス">白金キャンパス</option>
+						    
+					    
+						    
+						    	<option value="- 総合図書館">- 総合図書館</option>
+						    
+					    
+						    
+						    	<option value="- 工学部">- 工学部</option>
+						    
+					    
+						    
+						    	<option value="- 工１Ａ">- 工１Ａ</option>
+						    
+					    
+						    
+						    	<option value="- 工１Ｂ">- 工１Ｂ</option>
+						    
+					    
+						    
+						    	<option value="- 工２">- 工２</option>
+						    
+					    
+						    
+						    	<option value="- 工２（情報理工）">- 工２（情報理工）</option>
+						    
+					    
+						    
+						    	<option value="- 工３">- 工３</option>
+						    
+					    
+						    
+						    	<option value="- 工４">- 工４</option>
+						    
+					    
+						    
+						    	<option value="- 工５">- 工５</option>
+						    
+					    
+						    
+						    	<option value="- 工６">- 工６</option>
+						    
+					    
+						    
+						    	<option value="- 工６（情報理工）">- 工６（情報理工）</option>
+						    
+					    
+						    
+						    	<option value="- 工７">- 工７</option>
+						    
+					    
+						    
+						    	<option value="- 工１４">- 工１４</option>
+						    
+					    
+						    
+						    	<option value="- 理７">- 理７</option>
+						    
+					    
+						    
+						    	<option value="- 理学部">- 理学部</option>
+						    
+					    
+						    
+						    	<option value="- 理図書">- 理図書</option>
+						    
+					    
+						    
+						    	<option value="- 理物理">- 理物理</option>
+						    
+					    
+						    
+						    	<option value="- 理天文">- 理天文</option>
+						    
+					    
+						    
+						    	<option value="- 理化学">- 理化学</option>
+						    
+					    
+						    
+						    	<option value="- 理生化">- 理生化</option>
+						    
+					    
+						    
+						    	<option value="- 理生物">- 理生物</option>
+						    
+					    
+						    
+						    	<option value="- 理地球">- 理地球</option>
+						    
+					    
+						    
+						    	<option value="- 法学部">- 法学部</option>
+						    
+					    
+						    
+						    	<option value="- 医学部">- 医学部</option>
+						    
+					    
+						    
+						    	<option value="- 医学部病院">- 医学部病院</option>
+						    
+					    
+						    
+						    	<option value="- 公共政策大学院">- 公共政策大学院</option>
+						    
+					    
+						    
+						    	<option value="- 文学部">- 文学部</option>
+						    
+					    
+						    
+						    	<option value="- 経済学部">- 経済学部</option>
+						    
+					    
+						    
+						    	<option value="- 教育学部">- 教育学部</option>
+						    
+					    
+						    
+						    	<option value="- 薬学部">- 薬学部</option>
+						    
+					    
+						    
+						    	<option value="- 東洋文化研究所">- 東洋文化研究所</option>
+						    
+					    
+						    
+						    	<option value="- 社会科学研究所">- 社会科学研究所</option>
+						    
+					    
+						    
+						    	<option value="- 情報学環">- 情報学環</option>
+						    
+					    
+						    
+						    	<option value="- 史料編さん所">- 史料編さん所</option>
+						    
+					    
+						    
+						    	<option value="- 総合研究博物館">- 総合研究博物館</option>
+						    
+					    
+						    
+						    	<option value="- 農学部">- 農学部</option>
+						    
+					    
+						    
+						    	<option value="- 地震研究所">- 地震研究所</option>
+						    
+					    
+						    
+						    	<option value="- 駒場図書館">- 駒場図書館</option>
+						    
+					    
+						    
+						    	<option value="- 教養学部自然">- 教養学部自然</option>
+						    
+					    
+						    
+						    	<option value="- 教養学部アメセン">- 教養学部アメセン</option>
+						    
+					    
+						    
+						    	<option value="- 教養学部研究室">- 教養学部研究室</option>
+						    
+					    
+						    
+						    	<option value="- 数理科学研究科">- 数理科学研究科</option>
+						    
+					    
+						    
+						    	<option value="- 生産技術研究所">- 生産技術研究所</option>
+						    
+					    
+						    
+						    	<option value="- 先端技術研究センタ">- 先端技術研究センタ</option>
+						    
+					    
+						    
+						    	<option value="- 空間情報科学研究セ">- 空間情報科学研究セ</option>
+						    
+					    
+						    
+						    	<option value="- 新領域">- 新領域</option>
+						    
+					    
+						    
+						    	<option value="- 宇宙線研究所">- 宇宙線研究所</option>
+						    
+					    
+						    
+						    	<option value="- 物性研究所">- 物性研究所</option>
+						    
+					    
+						    
+						    	<option value="- 大気海洋研究所">- 大気海洋研究所</option>
+						    
+					    
+						    
+						    	<option value="- 柏図書館">- 柏図書館</option>
+						    
+					    
+						    
+						    	<option value="- 数物連携宇宙研究機構">- 数物連携宇宙研究機構</option>
+						    
+					    
+						    
+						    	<option value="- 気候システム研究セ">- 気候システム研究セ</option>
+						    
+					    
+						    
+						    	<option value="- 医科学研究所">- 医科学研究所</option>
+						    
+					    
+						    
+						    	<option value="その他">その他</option>
+						    
+					    
+				    </select>
+				</div>
+			
+			<div class="col-sm-6 col-md-6 select-option">
+				<h3 class="search-advance-title">検索オプション</h3>
+				<label>
+					<span class="search-option-title">出版年:</span>
+					<input type="text" class="option-year" name="year1_exp" maxlength="4" value="" onkeydown="return EnterEvent(event.keyCode,'expart', 'search');" />
+					&nbsp;-&nbsp;
+					<input type="text" class="option-year" name="year2_exp" maxlength="4" value="" onkeydown="return EnterEvent(event.keyCode,'expart', 'search');" />
+				</label>
+				
+					<label>
+						<span class="search-option-title">出版国:</span>
+						<select name="cntry_exp">
+							
+					    		<option value="0">(指定なし)</option>
+					    	
+					    		<option value="1">日本</option>
+					    	
+					    		<option value="2">アメリカ合衆国</option>
+					    	
+					    		<option value="3">イギリス</option>
+					    	
+					    		<option value="4">フランス</option>
+					    	
+					    		<option value="5">ドイツ (旧東独を含む)</option>
+					    	
+					    		<option value="6">中華人民共和国</option>
+					    	
+					    		<option value="7">大韓民国</option>
+					    	
+					    		<option value="8">台湾</option>
+					    	
+					    		<option value="9">ロシア共和国</option>
+					    	
+					    		<option value="10">旧ソビエト連邦諸国</option>
+					    	
+					    		<option value="11">カナダ</option>
+					    	
+					    		<option value="12">アルゼンチン</option>
+					    	
+					    		<option value="13">オーストラリア・ニュージーランド</option>
+					    	
+					    		<option value="14">オーストリア</option>
+					    	
+					    		<option value="15">バングラディシュ</option>
+					    	
+					    		<option value="16">ベルギー</option>
+					    	
+					    		<option value="17">ブラジル</option>
+					    	
+					    		<option value="18">デンマーク</option>
+					    	
+					    		<option value="19">エジプト</option>
+					    	
+					    		<option value="20">ギリシャ</option>
+					    	
+					    		<option value="21">香港</option>
+					    	
+					    		<option value="22">インド</option>
+					    	
+					    		<option value="23">インドネシア</option>
+					    	
+					    		<option value="24">イタリア・バチカン</option>
+					    	
+					    		<option value="25">北朝鮮 = 朝鮮民主主義人民共和国</option>
+					    	
+					    		<option value="26">マレーシア</option>
+					    	
+					    		<option value="27">中近東諸国</option>
+					    	
+					    		<option value="28">オランダ</option>
+					    	
+					    		<option value="29">フィリピン</option>
+					    	
+					    		<option value="30">ポーランド</option>
+					    	
+					    		<option value="31">ポルトガル</option>
+					    	
+					    		<option value="32">シンガポール</option>
+					    	
+					    		<option value="33">スペイン</option>
+					    	
+					    		<option value="34">スウェーデン</option>
+					    	
+					    		<option value="35">スイス</option>
+					    	
+					    		<option value="36">タイ</option>
+					    	
+					    </select>
+					</label>
+				
+				
+					<label>
+						<span class="search-option-title">言語:</span>
+						<select name="txtl_exp">
+							
+					    		<option value="0">(指定なし)</option>
+					    	
+					    		<option value="1">日本語</option>
+					    	
+					    		<option value="2">英語</option>
+					    	
+					    		<option value="3">中国語</option>
+					    	
+					    		<option value="4">朝鮮語</option>
+					    	
+					    		<option value="5">アイスランド語</option>
+					    	
+					    		<option value="6">アイルランド語</option>
+					    	
+					    		<option value="7">アゼルバイジャン語</option>
+					    	
+					    		<option value="8">アッサム語</option>
+					    	
+					    		<option value="9">アフリカーンス語</option>
+					    	
+					    		<option value="10">アムハラ語</option>
+					    	
+					    		<option value="11">アラビア語</option>
+					    	
+					    		<option value="12">アルバニア語</option>
+					    	
+					    		<option value="13">アルメニア語</option>
+					    	
+					    		<option value="14">イタリア語</option>
+					    	
+					    		<option value="15">イディッシュ語</option>
+					    	
+					    		<option value="16">イロカノ語</option>
+					    	
+					    		<option value="17">インドネシア語・ジャワ語</option>
+					    	
+					    		<option value="18">ウイグル語</option>
+					    	
+					    		<option value="19">ウェールズ語</option>
+					    	
+					    		<option value="20">ウクライナ語</option>
+					    	
+					    		<option value="21">ウズベク語</option>
+					    	
+					    		<option value="22">ウルドゥー語</option>
+					    	
+					    		<option value="23">エストニア語</option>
+					    	
+					    		<option value="24">エスペラント</option>
+					    	
+					    		<option value="25">オスマントルコ語</option>
+					    	
+					    		<option value="26">オランダ語</option>
+					    	
+					    		<option value="27">カザーフ語</option>
+					    	
+					    		<option value="28">カタロニア語</option>
+					    	
+					    		<option value="29">ガリシア語</option>
+					    	
+					    		<option value="30">教会スラブ語・スラブ諸語</option>
+					    	
+					    		<option value="31">キルギス語</option>
+					    	
+					    		<option value="32">グジャラーティー語</option>
+					    	
+					    		<option value="33">クメール語</option>
+					    	
+					    		<option value="34">グルジア語</option>
+					    	
+					    		<option value="35">クロアチア語</option>
+					    	
+					    		<option value="36">現代ギリシャ語</option>
+					    	
+					    		<option value="37">古代ギリシャ語</option>
+					    	
+					    		<option value="38">サンスクリット語</option>
+					    	
+					    		<option value="39">シンハリーズ語</option>
+					    	
+					    		<option value="40">スウェーデン語</option>
+					    	
+					    		<option value="41">スペイン語</option>
+					    	
+					    		<option value="42">スロヴァキア語</option>
+					    	
+					    		<option value="43">スロヴェニア語</option>
+					    	
+					    		<option value="44">スワヒリ語</option>
+					    	
+					    		<option value="45">スンダ語</option>
+					    	
+					    		<option value="46">セルビア語</option>
+					    	
+					    		<option value="47">タイ語・タイ諸語</option>
+					    	
+					    		<option value="48">タガログ語</option>
+					    	
+					    		<option value="49">タジク語</option>
+					    	
+					    		<option value="50">タタール語</option>
+					    	
+					    		<option value="51">タミル語</option>
+					    	
+					    		<option value="52">チェコ語</option>
+					    	
+					    		<option value="53">チベット語・チベット諸語</option>
+					    	
+					    		<option value="54">中米インディアン諸語</option>
+					    	
+					    		<option value="55">デンマーク語</option>
+					    	
+					    		<option value="56">ドイツ語</option>
+					    	
+					    		<option value="57">トルコ語</option>
+					    	
+					    		<option value="58">ネパール語</option>
+					    	
+					    		<option value="59">ネワール語</option>
+					    	
+					    		<option value="60">ノルウェー語</option>
+					    	
+					    		<option value="61">パーリ語</option>
+					    	
+					    		<option value="62">ハウサ語</option>
+					    	
+					    		<option value="63">バスク語</option>
+					    	
+					    		<option value="64">ハンガリー語</option>
+					    	
+					    		<option value="65">パンジャブ語</option>
+					    	
+					    		<option value="66">ビルマ語</option>
+					    	
+					    		<option value="67">ヒンディー語</option>
+					    	
+					    		<option value="68">フィン語・フィン諸語</option>
+					    	
+					    		<option value="69">プラークリット諸語</option>
+					    	
+					    		<option value="70">フランス語</option>
+					    	
+					    		<option value="71">ブルガリア語</option>
+					    	
+					    		<option value="72">ベトナム語</option>
+					    	
+					    		<option value="73">ヘブライ語</option>
+					    	
+					    		<option value="74">ベラルーシ語</option>
+					    	
+					    		<option value="75">ペルシャ語</option>
+					    	
+					    		<option value="76">ベンガル語</option>
+					    	
+					    		<option value="77">ポーランド語</option>
+					    	
+					    		<option value="78">ボスニア語</option>
+					    	
+					    		<option value="79">ポルトガル語</option>
+					    	
+					    		<option value="80">マイティリー語</option>
+					    	
+					    		<option value="81">マケドニア語</option>
+					    	
+					    		<option value="82">マヤ語族</option>
+					    	
+					    		<option value="83">マラーティー語</option>
+					    	
+					    		<option value="84">マライ語</option>
+					    	
+					    		<option value="85">マラヤーラム語</option>
+					    	
+					    		<option value="86">モンゴル語</option>
+					    	
+					    		<option value="87">ラージャスターニー語</option>
+					    	
+					    		<option value="88">ラオ語</option>
+					    	
+					    		<option value="89">ラテン語</option>
+					    	
+					    		<option value="90">ラトヴィア語</option>
+					    	
+					    		<option value="91">リトアニア語</option>
+					    	
+					    		<option value="92">ルーマニア語</option>
+					    	
+					    		<option value="93">ロシア語</option>
+					    	
+					    		<option value="94">7種以上の言語</option>
+					    	
+					    		<option value="95">言語名不明</option>
+					    	
+					    </select>
+					</label>
+				
+				
+					<label>
+						<span class="search-option-title">分野:</span>
+						<select name="cls_exp">
+							
+					    		<option value="0">(全分野)</option>
+					    	
+					    		<option value="1">総記・総合領域</option>
+					    	
+					    		<option value="2">-コンピュータ科学</option>
+					    	
+					    		<option value="3">-書誌・目録</option>
+					    	
+					    		<option value="4">-図書館・情報学</option>
+					    	
+					    		<option value="5">-百科辞典・事典</option>
+					    	
+					    		<option value="6">-出版・ジャーナリズム</option>
+					    	
+					    		<option value="7">哲学・心理学</option>
+					    	
+					    		<option value="8">-心理学</option>
+					    	
+					    		<option value="9">-倫理学</option>
+					    	
+					    		<option value="10">-哲学</option>
+					    	
+					    		<option value="11">宗教</option>
+					    	
+					    		<option value="12">-神道</option>
+					    	
+					    		<option value="13">-仏教</option>
+					    	
+					    		<option value="14">-キリスト教</option>
+					    	
+					    		<option value="15">社会科学</option>
+					    	
+					    		<option value="16">-社会一般．社会学</option>
+					    	
+					    		<option value="17">-統計</option>
+					    	
+					    		<option value="18">-政治</option>
+					    	
+					    		<option value="19">-経済</option>
+					    	
+					    		<option value="20">-法律</option>
+					    	
+					    		<option value="21">-行政</option>
+					    	
+					    		<option value="22">-福祉・社会事業</option>
+					    	
+					    		<option value="23">-教育</option>
+					    	
+					    		<option value="24">-商業・通信・運輸</option>
+					    	
+					    		<option value="25">-風俗習慣・民俗学</option>
+					    	
+					    		<option value="26">言語（語学）</option>
+					    	
+					    		<option value="27">-言語学</option>
+					    	
+					    		<option value="28">-日本語</option>
+					    	
+					    		<option value="29">-中国語</option>
+					    	
+					    		<option value="30">-朝鮮・ハングル語</option>
+					    	
+					    		<option value="31">-英語</option>
+					    	
+					    		<option value="32">-ドイツ語</option>
+					    	
+					    		<option value="33">-フランス語</option>
+					    	
+					    		<option value="34">-スペイン・ポルトガル語</option>
+					    	
+					    		<option value="35">-イタリア語</option>
+					    	
+					    		<option value="36">-ロシア語</option>
+					    	
+					    		<option value="37">-ギリシャ語</option>
+					    	
+					    		<option value="38">-ラテン語</option>
+					    	
+					    		<option value="39">自然科学・数学</option>
+					    	
+					    		<option value="40">-自然科学一般</option>
+					    	
+					    		<option value="41">-数学</option>
+					    	
+					    		<option value="42">-天文学</option>
+					    	
+					    		<option value="43">-物理学</option>
+					    	
+					    		<option value="44">-化学</option>
+					    	
+					    		<option value="45">-地球科学．古生物学</option>
+					    	
+					    		<option value="46">-生命科学．生物学</option>
+					    	
+					    		<option value="47">-植物学</option>
+					    	
+					    		<option value="48">-動物学</option>
+					    	
+					    		<option value="49">技術（応用科学）</option>
+					    	
+					    		<option value="50">-技術一般</option>
+					    	
+					    		<option value="51">-医学</option>
+					    	
+					    		<option value="52">--薬学</option>
+					    	
+					    		<option value="53">--歯学</option>
+					    	
+					    		<option value="54">-工学</option>
+					    	
+					    		<option value="55">-農業</option>
+					    	
+					    		<option value="56">--畜産業・獣医学</option>
+					    	
+					    		<option value="57">--水産業・水産学</option>
+					    	
+					    		<option value="58">-家政学</option>
+					    	
+					    		<option value="59">-化学工業</option>
+					    	
+					    		<option value="60">-製造業</option>
+					    	
+					    		<option value="61">-建築</option>
+					    	
+					    		<option value="62">芸術</option>
+					    	
+					    		<option value="63">-芸術一般</option>
+					    	
+					    		<option value="64">-都市計画・造園</option>
+					    	
+					    		<option value="65">-造形美術・彫刻</option>
+					    	
+					    		<option value="66">-工芸</option>
+					    	
+					    		<option value="67">-絵画</option>
+					    	
+					    		<option value="68">-グラフィックアート，版画</option>
+					    	
+					    		<option value="69">-写真</option>
+					    	
+					    		<option value="70">-音楽</option>
+					    	
+					    		<option value="71">-レクリエーション，演劇，スポーツ</option>
+					    	
+					    		<option value="72">文学</option>
+					    	
+					    		<option value="73">-文学一般</option>
+					    	
+					    		<option value="74">-日本文学</option>
+					    	
+					    		<option value="75">-中国文学</option>
+					    	
+					    		<option value="76">-英米文学</option>
+					    	
+					    		<option value="77">-ドイツ文学</option>
+					    	
+					    		<option value="78">-フランス文学</option>
+					    	
+					    		<option value="79">-スペイン・ポルトガル文学</option>
+					    	
+					    		<option value="80">-イタリア文学</option>
+					    	
+					    		<option value="81">-ロシア文学</option>
+					    	
+					    		<option value="82">-ギリシャ文学</option>
+					    	
+					    		<option value="83">-ラテン文学</option>
+					    	
+					    		<option value="84">歴史・地理</option>
+					    	
+					    		<option value="85">-歴史一般</option>
+					    	
+					    		<option value="86">-地理・紀行</option>
+					    	
+					    		<option value="87">--ヨーロッパの地理（ロシア含む）</option>
+					    	
+					    		<option value="88">--アジアの地理</option>
+					    	
+					    		<option value="89">---日本の地理</option>
+					    	
+					    		<option value="90">--アフリカの地理</option>
+					    	
+					    		<option value="91">--北アメリカの地理（中米含む）</option>
+					    	
+					    		<option value="92">--南アメリカの地理</option>
+					    	
+					    		<option value="93">--その他の地域の地理</option>
+					    	
+					    		<option value="94">-伝記</option>
+					    	
+					    		<option value="95">-古代史</option>
+					    	
+					    		<option value="96">-ヨーロッパの歴史（ロシア含む）</option>
+					    	
+					    		<option value="97">-アジアの歴史</option>
+					    	
+					    		<option value="98">--日本の歴史</option>
+					    	
+					    		<option value="100">-アフリカの歴史</option>
+					    	
+					    		<option value="101">-北アメリカの歴史（中米含む）</option>
+					    	
+					    		<option value="102">-南アメリカの歴史</option>
+					    	
+					    		<option value="103">-その他の地域の歴史</option>
+					    	
+					    </select>
+					</label>
+				
+				
+					<label>
+						<span class="search-option-title">媒体種別:</span>
+					    <select name="lgmd_exp">
+							
+								<option value="">(指定なし)</option>
+							
+								<option value="040">マイクロ資料</option>
+							
+								<option value="042">マイクロリール</option>
+							
+								<option value="044">マイクロフィッシュ</option>
+							
+								<option value="052">カセットテープ</option>
+							
+								<option value="054">ビデオテープ</option>
+							
+								<option value="055">映画フィルム</option>
+							
+								<option value="056">CD･LD･DVD</option>
+							
+								<option value="058">レコード</option>
+							
+								<option value="062">CD-ROM・DVD-ROM</option>
+							
+								<option value="070">静止画像</option>
+							
+								<option value="072">スライド</option>
+							
+					    </select>
+					</label>
+				
+				
+					<label>
+						<span class="search-option-title">配架場所:</span>
+						<select name="place_exp">
+							
+					    		<option value="">(指定なし)</option>
+					    	
+					    		<option value="01002000">総合図・雑誌</option>
+					    	
+					    		<option value="01008000">総合図・自動書庫</option>
+					    	
+					    		<option value="01002001">総合図・1F新着雑誌</option>
+					    	
+					    		<option value="01001030">総合図・1F国際資料コーナー</option>
+					    	
+					    		<option value="01001000">総合図・3F開架</option>
+					    	
+					    		<option value="01001005">総合図・3F開架(洋書)</option>
+					    	
+					    		<option value="01001009">総合図・3F開架(ホール)</option>
+					    	
+					    		<option value="01001002">総合図・3F開架(岩波文庫)</option>
+					    	
+					    		<option value="01001003">総合図・3F開架(叢書・全集)</option>
+					    	
+					    		<option value="01001004">総合図・3F開架(大型本)</option>
+					    	
+					    		<option value="01001020">総合図・3F参考図書</option>
+					    	
+					    		<option value="01100001">総合図・4Fアジア</option>
+					    	
+					    		<option value="01100006">総合図・4Fアジア(雑誌)</option>
+					    	
+					    		<option value="01100005">総合図・4Fアジア(参考)</option>
+					    	
+					    		<option value="01100004">総合図・4Fアジア(大型)</option>
+					    	
+					    		<option value="01006000">総合図・保存書庫</option>
+					    	
+					    		<option value="01006010">総合図・保存書庫(和漢古書)</option>
+					    	
+					    		<option value="01101000">総合図・保存書庫(アジア)</option>
+					    	
+					    		<option value="01101010">総合図・保存書庫(アジア・和漢古書)</option>
+					    	
+					    		<option value="01007201">総合図・コレクション室(要申込)</option>
+					    	
+					    		<option value="01005000">総合図・マイクロ室(事前申込)</option>
+					    	
+					    		<option value="01007101">総合図・貴重書庫(事前申込)</option>
+					    	
+					    		<option value="01007102">総合図・準貴重書庫(事前申込)</option>
+					    	
+					    		<option value="01004000">総合図・総合カウンター</option>
+					    	
+					    		<option value="01004001">総合図・保存書庫カウンター</option>
+					    	
+					    		<option value="01003000">総合図・国際資料室(利用不可)</option>
+					    	
+					    		<option value="02001000">法・図</option>
+					    	
+					    		<option value="02001007">法・雑誌</option>
+					    	
+					    		<option value="02001100">法・法科</option>
+					    	
+					    		<option value="02001200">法・判例参考</option>
+					    	
+					    		<option value="02002000">法・外国法</option>
+					    	
+					    		<option value="02002300">法・貴重書室</option>
+					    	
+					    		<option value="02002100">法・図B1</option>
+					    	
+					    		<option value="02002200">法・図B2</option>
+					    	
+					    		<option value="02003000">法・近セ明治文庫</option>
+					    	
+					    		<option value="02003001">法・近セ明治文庫(教官閲覧室)</option>
+					    	
+					    		<option value="02004000">法・法制史資料室</option>
+					    	
+					    		<option value="03001001">医図・書庫</option>
+					    	
+					    		<option value="03001003">医図・閲覧室</option>
+					    	
+					    		<option value="03001005">医図・B02室</option>
+					    	
+					    		<option value="03001006">医図・B09室</option>
+					    	
+					    		<option value="03001007">医図・史料室</option>
+					    	
+					    		<option value="03002000">医・分子神</option>
+					    	
+					    		<option value="03002001">医・解剖</option>
+					    	
+					    		<option value="03002002">医・人体病</option>
+					    	
+					    		<option value="03002003">医・病理</option>
+					    	
+					    		<option value="03002004">医・分子病</option>
+					    	
+					    		<option value="03002005">医・法医</option>
+					    	
+					    		<option value="03002006">医・微生物</option>
+					    	
+					    		<option value="03002007">医・免疫</option>
+					    	
+					    		<option value="03002008">医・感染制</option>
+					    	
+					    		<option value="03002009">医・薬理</option>
+					    	
+					    		<option value="03002010">医・免疫学</option>
+					    	
+					    		<option value="03002011">医・生化</option>
+					    	
+					    		<option value="03002012">医・放射診</option>
+					    	
+					    		<option value="03002013">医・公衛</option>
+					    	
+					    		<option value="03002014">医・放射治</option>
+					    	
+					    		<option value="03002015">医・細菌</option>
+					    	
+					    		<option value="03002016">医・核医学</option>
+					    	
+					    		<option value="03002017">医・栄養</option>
+					    	
+					    		<option value="03002018">医・基礎放</option>
+					    	
+					    		<option value="03002019">医・衛生</option>
+					    	
+					    		<option value="03002020">医・システ</option>
+					    	
+					    		<option value="03002021">医・生理</option>
+					    	
+					    		<option value="03002022">医・生体情</option>
+					    	
+					    		<option value="03002023">医・放基</option>
+					    	
+					    		<option value="03002024">医・生体機</option>
+					    	
+					    		<option value="03002025">医・保成人</option>
+					    	
+					    		<option value="03002026">医・神経病</option>
+					    	
+					    		<option value="03002027">医・保管理</option>
+					    	
+					    		<option value="03002028">医・神生化</option>
+					    	
+					    		<option value="03002029">医・保社会</option>
+					    	
+					    		<option value="03002030">医・神生物</option>
+					    	
+					    		<option value="03002031">医・保母子</option>
+					    	
+					    		<option value="03002032">医・言語行</option>
+					    	
+					    		<option value="03002033">医・保疫学</option>
+					    	
+					    		<option value="03002034">医・言語神</option>
+					    	
+					    		<option value="03002035">医・保精衛</option>
+					    	
+					    		<option value="03002036">医・音言語</option>
+					    	
+					    		<option value="03002037">医・保看護</option>
+					    	
+					    		<option value="03002038">医・精神医</option>
+					    	
+					    		<option value="03002039">医・保栄養</option>
+					    	
+					    		<option value="03002040">医・神経内</option>
+					    	
+					    		<option value="03002041">医・保人類</option>
+					    	
+					    		<option value="03002042">医・衛生学</option>
+					    	
+					    		<option value="03002043">医・脳事務</option>
+					    	
+					    		<option value="03002044">医・公衆衛</option>
+					    	
+					    		<option value="03002045">医・脳解剖</option>
+					    	
+					    		<option value="03002046">医・量子環</option>
+					    	
+					    		<option value="03002047">医・脳生理</option>
+					    	
+					    		<option value="03002048">医・法医学</option>
+					    	
+					    		<option value="03002049">医・脳病理</option>
+					    	
+					    		<option value="03002050">医・健康社</option>
+					    	
+					    		<option value="03002051">医・脳生化</option>
+					    	
+					    		<option value="03002052">医・精神保</option>
+					    	
+					    		<option value="03002053">医・脳神経</option>
+					    	
+					    		<option value="03002054">医・疫学予</option>
+					    	
+					    		<option value="03002055">医・脳臨床</option>
+					    	
+					    		<option value="03002056">医・健康学</option>
+					    	
+					    		<option value="03002057">医・電子</option>
+					    	
+					    		<option value="03002058">医・健康増</option>
+					    	
+					    		<option value="03002059">医・音声言</option>
+					    	
+					    		<option value="03002060">医・生物統</option>
+					    	
+					    		<option value="03002061">医・動物験</option>
+					    	
+					    		<option value="03002062">医・倫理</option>
+					    	
+					    		<option value="03002063">医・情報</option>
+					    	
+					    		<option value="03002064">医・看護体</option>
+					    	
+					    		<option value="03002065">医・放健</option>
+					    	
+					    		<option value="03002066">医・成人看</option>
+					    	
+					    		<option value="03002067">医・人類遺</option>
+					    	
+					    		<option value="03002068">医・ターミ</option>
+					    	
+					    		<option value="03002069">医・国保計</option>
+					    	
+					    		<option value="03002070">医・家看護</option>
+					    	
+					    		<option value="03002071">医・国地保</option>
+					    	
+					    		<option value="03002072">医・地看護</option>
+					    	
+					    		<option value="03002073">医・基礎看</option>
+					    	
+					    		<option value="03002074">医・精神看</option>
+					    	
+					    		<option value="03002075">医・家族看</option>
+					    	
+					    		<option value="03002076">医・国際保</option>
+					    	
+					    		<option value="03002077">医・地域看</option>
+					    	
+					    		<option value="03002078">医・国際地</option>
+					    	
+					    		<option value="03002079">医・細生物</option>
+					    	
+					    		<option value="03002080">医・人遺伝</option>
+					    	
+					    		<option value="03002081">医・生体構</option>
+					    	
+					    		<option value="03002082">医・発達医</option>
+					    	
+					    		<option value="03002083">医・細胞構</option>
+					    	
+					    		<option value="03002084">医・人類生</option>
+					    	
+					    		<option value="03002085">医・神経細</option>
+					    	
+					    		<option value="03002086">医・生物医</option>
+					    	
+					    		<option value="03002087">医・分子生</option>
+					    	
+					    		<option value="03002088">医・動物施</option>
+					    	
+					    		<option value="03002089">医・細胞情</option>
+					    	
+					    		<option value="03002090">医・放射</option>
+					    	
+					    		<option value="03002091">医・代謝生</option>
+					    	
+					    		<option value="03002092">医・看護管</option>
+					    	
+					    		<option value="03002093">医・統合生</option>
+					    	
+					    		<option value="03002095">医・細生理</option>
+					    	
+					    		<option value="03002097">医・神生理</option>
+					    	
+					    		<option value="03002099">医・細胞薬</option>
+					    	
+					    		<option value="03002100">医・母性看</option>
+					    	
+					    		<option value="03002101">医・老年看</option>
+					    	
+					    		<option value="03002102">医・国協セ</option>
+					    	
+					    		<option value="03002103">医・臨床疫</option>
+					    	
+					    		<option value="03002104">医・社会予</option>
+					    	
+					    		<option value="03002105">医・臨床情</option>
+					    	
+					    		<option value="03003001">医・臨事務</option>
+					    	
+					    		<option value="03003003">医・病ＲＩ</option>
+					    	
+					    		<option value="03003005">医・病理部</option>
+					    	
+					    		<option value="03003007">医・中検査</option>
+					    	
+					    		<option value="03003009">医・中手術</option>
+					    	
+					    		<option value="03003011">医・中医情</option>
+					    	
+					    		<option value="03003013">医・眼科</option>
+					    	
+					    		<option value="03003015">医・一外</option>
+					    	
+					    		<option value="03003017">医・二外</option>
+					    	
+					    		<option value="03003019">医・胸外</option>
+					    	
+					    		<option value="03003021">医・脳外</option>
+					    	
+					    		<option value="03003023">医・形成外</option>
+					    	
+					    		<option value="03003025">医・整形外</option>
+					    	
+					    		<option value="03003027">医・中放射</option>
+					    	
+					    		<option value="03003029">医・分娩部</option>
+					    	
+					    		<option value="03003031">医・中材料</option>
+					    	
+					    		<option value="03003033">医・角膜移</option>
+					    	
+					    		<option value="03003035">医・皮膚</option>
+					    	
+					    		<option value="03003037">医・泌尿器</option>
+					    	
+					    		<option value="03003039">医・放射線</option>
+					    	
+					    		<option value="03003041">医・耳鼻咽</option>
+					    	
+					    		<option value="03003043">医・助産婦</option>
+					    	
+					    		<option value="03003045">医・看護部</option>
+					    	
+					    		<option value="03003047">医・看学</option>
+					    	
+					    		<option value="03003049">医・救急部</option>
+					    	
+					    		<option value="03003051">医・一内</option>
+					    	
+					    		<option value="03003053">医・二内</option>
+					    	
+					    		<option value="03003055">医・三内</option>
+					    	
+					    		<option value="03003057">医・物内</option>
+					    	
+					    		<option value="03003059">医・神内</option>
+					    	
+					    		<option value="03003061">医・リハビ</option>
+					    	
+					    		<option value="03003063">医・老人科</option>
+					    	
+					    		<option value="03003065">医・産婦人</option>
+					    	
+					    		<option value="03003067">医・歯口外</option>
+					    	
+					    		<option value="03003069">医・精神経</option>
+					    	
+					    		<option value="03003071">医・小児科</option>
+					    	
+					    		<option value="03003073">医・小児外</option>
+					    	
+					    		<option value="03003075">医・小術後</option>
+					    	
+					    		<option value="03003077">医・麻酔科</option>
+					    	
+					    		<option value="03003079">医・輸血部</option>
+					    	
+					    		<option value="03003081">医・薬剤部</option>
+					    	
+					    		<option value="03003083">医・院長室</option>
+					    	
+					    		<option value="03003085">医・総婦室</option>
+					    	
+					    		<option value="03003087">医・無菌治</option>
+					    	
+					    		<option value="03005001">医・遡及図</option>
+					    	
+					    		<option value="03005003">医・遡及保健</option>
+					    	
+					    		<option value="03005005">医・遡及衛看</option>
+					    	
+					    		<option value="04011003">工1A・社基(集密)</option>
+					    	
+					    		<option value="04011010">工1A・社基(書庫)</option>
+					    	
+					    		<option value="04011004">工1A・社基(大型)</option>
+					    	
+					    		<option value="04011002">工1A・社基(低書架)</option>
+					    	
+					    		<option value="04011000">工1A・社基(壁面)</option>
+					    	
+					    		<option value="04011005">工1A・社基(壁面高所)</option>
+					    	
+					    		<option value="04011001,04011020">工1A・社基研</option>
+					    	
+					    		<option value="04012000">工1B・建築</option>
+					    	
+					    		<option value="04012002">工1B・建築(工12浅野)</option>
+					    	
+					    		<option value="04012001">工1B・建築(高所)</option>
+					    	
+					    		<option value="04013000">工2・図書室</option>
+					    	
+					    		<option value="04013040">工2・図書室(CS図書)</option>
+					    	
+					    		<option value="04013031">工2・図書室(工12浅野(機械))</option>
+					    	
+					    		<option value="04013032">工2・図書室(工12浅野(電気))</option>
+					    	
+					    		<option value="04013001">工2・保存書庫(機械)</option>
+					    	
+					    		<option value="04013002">工2・保存書庫(電気)</option>
+					    	
+					    		<option value="04013003">工2・研究室</option>
+					    	
+					    		<option value="04013004">工2・機械図</option>
+					    	
+					    		<option value="04013005">工2・機械</option>
+					    	
+					    		<option value="04013006">工2・産機</option>
+					    	
+					    		<option value="04013007">工2・舶機</option>
+					    	
+					    		<option value="04013008">工2・機情</option>
+					    	
+					    		<option value="04013009">工2・機械研</option>
+					    	
+					    		<option value="04013010">工2・産機研</option>
+					    	
+					    		<option value="04013011">工2・精密</option>
+					    	
+					    		<option value="04013012">工2・電気図</option>
+					    	
+					    		<option value="04013013">工2・電気</option>
+					    	
+					    		<option value="04013014">工2・電子</option>
+					    	
+					    		<option value="04013015">工2・電子情</option>
+					    	
+					    		<option value="04013017">工2・総研機構</option>
+					    	
+					    		<option value="04014000">工2・研究室(情報理工)</option>
+					    	
+					    		<option value="04014001">工2・電子情図</option>
+					    	
+					    		<option value="04014002">工2・電子情研</option>
+					    	
+					    		<option value="04014003">工2・知能機図</option>
+					    	
+					    		<option value="04014004">工2・知能機研</option>
+					    	
+					    		<option value="04015000">工3・図</option>
+					    	
+					    		<option value="04015001">工3・研(利用不可)</option>
+					    	
+					    		<option value="04015002">工3・別置(利用不可)</option>
+					    	
+					    		<option value="04017000">工4・マテリアル</option>
+					    	
+					    		<option value="04017010">工4・マテリアル(工12浅野)</option>
+					    	
+					    		<option value="04018000">工5・化学系図</option>
+					    	
+					    		<option value="04018001">工5・教科書</option>
+					    	
+					    		<option value="04018005">工5・応化</option>
+					    	
+					    		<option value="04018006">工5・化シス</option>
+					    	
+					    		<option value="04018007">工5・化生</option>
+					    	
+					    		<option value="04019000">工6・雑誌</option>
+					    	
+					    		<option value="04019003,0401A003">工6・書庫B1</option>
+					    	
+					    		<option value="04019004,0401A004">工6・書庫B2</option>
+					    	
+					    		<option value="04019005,0401A005">工6・書庫1F</option>
+					    	
+					    		<option value="04019006,0401A006">工6・開架</option>
+					    	
+					    		<option value="04019007,0401A007">工6・別置</option>
+					    	
+					    		<option value="0401A001">工6・シス情</option>
+					    	
+					    		<option value="04019002">工6・計数</option>
+					    	
+					    		<option value="0401A000">工6・数理情</option>
+					    	
+					    		<option value="0401A002">工6・創造情報</option>
+					    	
+					    		<option value="04019001">工6・物工</option>
+					    	
+					    		<option value="0401B000">工7・航空</option>
+					    	
+					    		<option value="0401C000">工14・都市</option>
+					    	
+					    		<option value="0401J000">理7・CS図</option>
+					    	
+					    		<option value="0401J010">理7・CS図(工12浅野)</option>
+					    	
+					    		<option value="0401J002">理7・CS図(理1号館書庫)</option>
+					    	
+					    		<option value="0401J001">理7・CS研</option>
+					    	
+					    		<option value="05001000">文・図</option>
+					    	
+					    		<option value="05003000">文・国文</option>
+					    	
+					    		<option value="05005000">文・国語</option>
+					    	
+					    		<option value="05007000">文・中文</option>
+					    	
+					    		<option value="05009000">文・英文</option>
+					    	
+					    		<option value="05011000">文・仏文</option>
+					    	
+					    		<option value="05013000">文・独文</option>
+					    	
+					    		<option value="05015000">文・スラヴ文</option>
+					    	
+					    		<option value="05016000">文・現文</option>
+					    	
+					    		<option value="05017000">文・伊文</option>
+					    	
+					    		<option value="05019000">文・哲学</option>
+					    	
+					    		<option value="05021000">文・倫理</option>
+					    	
+					    		<option value="05023000">文・心理</option>
+					    	
+					    		<option value="05025000">文・中国思想</option>
+					    	
+					    		<option value="05027000">文・印哲</option>
+					    	
+					    		<option value="05029000">文・日本史</option>
+					    	
+					    		<option value="05031000">文・東史</option>
+					    	
+					    		<option value="05033000">文・西史</option>
+					    	
+					    		<option value="05035000">文・考古</option>
+					    	
+					    		<option value="05037000">文・宗教</option>
+					    	
+					    		<option value="05039000">文・印文</option>
+					    	
+					    		<option value="05051000">文・西洋古典</option>
+					    	
+					    		<option value="05053000">文・社会</option>
+					    	
+					    		<option value="05055000">文・社会心理</option>
+					    	
+					    		<option value="05057000">文・美学</option>
+					    	
+					    		<option value="05059000">文・美史</option>
+					    	
+					    		<option value="05061000">文・言語</option>
+					    	
+					    		<option value="05062000">文・次世代セ</option>
+					    	
+					    		<option value="05063000">文・韓国朝鮮</option>
+					    	
+					    		<option value="05064000">文・言語動態</option>
+					    	
+					    		<option value="05065000">文・視教セ</option>
+					    	
+					    		<option value="05066000">文・死生学セ</option>
+					    	
+					    		<option value="05067000">文・イスラム</option>
+					    	
+					    		<option value="05069000">文・常呂</option>
+					    	
+					    		<option value="05072000">文・文化資源</option>
+					    	
+					    		<option value="05075000">文・大江健三郎文庫</option>
+					    	
+					    		<option value="06001023">理図</option>
+					    	
+					    		<option value="06001029">理図・学生用図書</option>
+					    	
+					    		<option value="06001025">理図・参考図書</option>
+					    	
+					    		<option value="06001026">理図・地図コーナー</option>
+					    	
+					    		<option value="06001027">理図・地下書庫</option>
+					    	
+					    		<option value="06001028">理図・貴重書庫</option>
+					    	
+					    		<option value="06001030">理図・化学</option>
+					    	
+					    		<option value="06001031">理図・植物園</option>
+					    	
+					    		<option value="06007001">理・物理研</option>
+					    	
+					    		<option value="06017001">理・生物研</option>
+					    	
+					    		<option value="06001001">理・臨海</option>
+					    	
+					    		<option value="06001013">理・地殻</option>
+					    	
+					    		<option value="06001015">理・天セ</option>
+					    	
+					    		<option value="06001019">理・遺伝子</option>
+					    	
+					    		<option value="06001007">素粒子物理国際研究センター</option>
+					    	
+					    		<option value="06001021">環境安全研究センター</option>
+					    	
+					    		<option value="07001000">農図・雑誌</option>
+					    	
+					    		<option value="07001001">農図・一般図書</option>
+					    	
+					    		<option value="07001002">農図・シラバスコーナー</option>
+					    	
+					    		<option value="07001003">農図・参考図書</option>
+					    	
+					    		<option value="07001004">農図・機関要覧</option>
+					    	
+					    		<option value="07001007">農図・文献目録</option>
+					    	
+					    		<option value="07001010">農図・地図</option>
+					    	
+					    		<option value="07001017">農図・センサス</option>
+					    	
+					    		<option value="07001020">農図・非図書資料</option>
+					    	
+					    		<option value="07001021">農図・移管図書和</option>
+					    	
+					    		<option value="07001022">農図・保存庫</option>
+					    	
+					    		<option value="07001023">農図・移管図書洋</option>
+					    	
+					    		<option value="07001028">農図・旧分類</option>
+					    	
+					    		<option value="07003001">農・作物学</option>
+					    	
+					    		<option value="07003002">農・栽培学</option>
+					    	
+					    		<option value="07003003">農・園芸学</option>
+					    	
+					    		<option value="07003005">農・植物病理学</option>
+					    	
+					    		<option value="07003006">農・昆虫遺伝</option>
+					    	
+					    		<option value="07003007">農・育種学</option>
+					    	
+					    		<option value="07003008">農・生物測定学</option>
+					    	
+					    		<option value="07003009">農・応用昆虫学</option>
+					    	
+					    		<option value="07003010">農・植物分子遺伝学</option>
+					    	
+					    		<option value="07003011">農・植物栄養・肥料学</option>
+					    	
+					    		<option value="07003012">農・生物化学</option>
+					    	
+					    		<option value="07003013">農・有機化学</option>
+					    	
+					    		<option value="07003014">農・醗酵学</option>
+					    	
+					    		<option value="07003015">農・栄養化学</option>
+					    	
+					    		<option value="07003016">農・食糧化学</option>
+					    	
+					    		<option value="07003017">農・生物有機化学</option>
+					    	
+					    		<option value="07003018">農・食品生化学</option>
+					    	
+					    		<option value="07003019">農・土壌圏科学</option>
+					    	
+					    		<option value="07003020">農・応用微生物学</option>
+					    	
+					    		<option value="07003021">農・分析化学</option>
+					    	
+					    		<option value="07003022">農・酵素学</option>
+					    	
+					    		<option value="07003023">農・生物制御化学</option>
+					    	
+					    		<option value="07003024">農・微生物学</option>
+					    	
+					    		<option value="07003025">農・食品生物構造学</option>
+					    	
+					    		<option value="07003026">農・細胞遺伝学</option>
+					    	
+					    		<option value="07003027">農・放射線植物生理学</option>
+					    	
+					    		<option value="07003028">農・植物分子生理学</option>
+					    	
+					    		<option value="07003029">農・生物機能開発化学</option>
+					    	
+					    		<option value="07003031">農・森林経理学</option>
+					    	
+					    		<option value="07003032">農・造林学</option>
+					    	
+					    		<option value="07003033">農・林政学</option>
+					    	
+					    		<option value="07003034">農・森林生物地球科学</option>
+					    	
+					    		<option value="07003035">農・森林利用学</option>
+					    	
+					    		<option value="07003036">農・森林植物学</option>
+					    	
+					    		<option value="07003037">農・森林動物学</option>
+					    	
+					    		<option value="07003038">農・森林風致計画学</option>
+					    	
+					    		<option value="07003039">農・林図</option>
+					    	
+					    		<option value="07003040">農・旧森林生態社会</option>
+					    	
+					    		<option value="07003041">農・水産資源学</option>
+					    	
+					    		<option value="07003042">農・魚病学</option>
+					    	
+					    		<option value="07003043">農・水圏天然物化学</option>
+					    	
+					    		<option value="07003044">農・水族生理学</option>
+					    	
+					    		<option value="07003045">農・水圏生物環境学</option>
+					    	
+					    		<option value="07003046">農・水産化学</option>
+					    	
+					    		<option value="07003047">農・水圏生物工学</option>
+					    	
+					    		<option value="07003051">農・農業経営学</option>
+					    	
+					    		<option value="07003052">農・経済学</option>
+					    	
+					    		<option value="07003053">農・食料・資源経済学</option>
+					    	
+					    		<option value="07003054">農・農政学</option>
+					    	
+					    		<option value="07003055">農・農業史</option>
+					    	
+					    		<option value="07003056">農・農村開発金融</option>
+					    	
+					    		<option value="07003061">農・農地環境工学</option>
+					    	
+					    		<option value="07003062">農・水利環境工学</option>
+					    	
+					    		<option value="07003063">農・環境地水学</option>
+					    	
+					    		<option value="07003064">農・生物環境工学</option>
+					    	
+					    		<option value="07003065">農・生物機械工学</option>
+					    	
+					    		<option value="07003066">農・生物プロセス工学</option>
+					    	
+					    		<option value="07003067">農・生物環境情報工学</option>
+					    	
+					    		<option value="07003071">農・獣医繁殖育種学</option>
+					    	
+					    		<option value="07003072">農・獣医解剖学</option>
+					    	
+					    		<option value="07003073">農・獣医生理学</option>
+					    	
+					    		<option value="07003074">農・獣医衛生学</option>
+					    	
+					    		<option value="07003075">農・獣医薬理学</option>
+					    	
+					    		<option value="07003076">農・獣医微生物学</option>
+					    	
+					    		<option value="07003077">農・獣医病理学</option>
+					    	
+					    		<option value="07003078">農・獣医内科学</option>
+					    	
+					    		<option value="07003079">農・獣医外科学</option>
+					    	
+					    		<option value="07003080">農・実験動物学</option>
+					    	
+					    		<option value="07003081">農・獣医公衆衛生学</option>
+					    	
+					    		<option value="07003082">農・獣医臨床病理学</option>
+					    	
+					    		<option value="07003083">農・細胞生化学</option>
+					    	
+					    		<option value="07003084">農・獣医動物行動学</option>
+					    	
+					    		<option value="07003091">農・木材物理学</option>
+					    	
+					    		<option value="07003092">農・木質材料学</option>
+					    	
+					    		<option value="07003093">農・森林化学</option>
+					    	
+					    		<option value="07003094">農・木材化学</option>
+					    	
+					    		<option value="07003095">農・高分子材料学</option>
+					    	
+					    		<option value="07003096">農・製紙科学</option>
+					    	
+					    		<option value="07003097">農・生物材料科学図書室</option>
+					    	
+					    		<option value="07003098">農・生物素材科学</option>
+					    	
+					    		<option value="07003099">農・木質構造学</option>
+					    	
+					    		<option value="07003106">農・分子育種学</option>
+					    	
+					    		<option value="07003107">農・生物情報工学</option>
+					    	
+					    		<option value="07003108">農・応用免疫学</option>
+					    	
+					    		<option value="07003109">農・応用遺伝学</option>
+					    	
+					    		<option value="07003110">農・動物細胞制御学</option>
+					    	
+					    		<option value="07003114">農・分子生命工学</option>
+					    	
+					    		<option value="07003115">農・国際水産開発学</option>
+					    	
+					    		<option value="07003116">農・国際動物資源科学</option>
+					    	
+					    		<option value="07003117">農・国際植物資源科学</option>
+					    	
+					    		<option value="07003118">農・国際植物材料科学</option>
+					    	
+					    		<option value="07003119">農・国際森林環境学</option>
+					    	
+					    		<option value="07003120">農・新機能植物開発学</option>
+					    	
+					    		<option value="07003121">農・国際環境経済学</option>
+					    	
+					    		<option value="07003122">農・国際情報農学</option>
+					    	
+					    		<option value="07003131">農・生物多様性科学</option>
+					    	
+					    		<option value="07003132">農・保全生態学</option>
+					    	
+					    		<option value="07003133">農・緑地創成学</option>
+					    	
+					    		<option value="07003134">農・森圏管理学</option>
+					    	
+					    		<option value="07003135">農・水域保全学</option>
+					    	
+					    		<option value="07003136">農・高度医療科学（VMC)</option>
+					    	
+					    		<option value="07051002">農・生態環境調査室</option>
+					    	
+					    		<option value="07051005">農・AgTECH1</option>
+					    	
+					    		<option value="07051006">農・AgTECH2</option>
+					    	
+					    		<option value="07051011">農・AgTECH3</option>
+					    	
+					    		<option value="07051021">農・アジア1</option>
+					    	
+					    		<option value="07051022">農・アジア2</option>
+					    	
+					    		<option value="07051023">農・アジア3</option>
+					    	
+					    		<option value="07051024">農・アジア4</option>
+					    	
+					    		<option value="07051025">農・アジア5</option>
+					    	
+					    		<option value="07051026">農・アジア6</option>
+					    	
+					    		<option value="07051027">農・アジア7</option>
+					    	
+					    		<option value="07051028">農・アジア8</option>
+					    	
+					    		<option value="07051029">農・アジア9</option>
+					    	
+					    		<option value="07051030">農・アジア10</option>
+					    	
+					    		<option value="07051031">農・アジア11</option>
+					    	
+					    		<option value="07051032">農・アジア12</option>
+					    	
+					    		<option value="07051036">農・生態調和農学機構1</option>
+					    	
+					    		<option value="07051037">農・生態調和農学機構2</option>
+					    	
+					    		<option value="07051038">農・生態調和農学機構3</option>
+					    	
+					    		<option value="07051050">農・演習林企画部</option>
+					    	
+					    		<option value="07051051">農・動物医療センター</option>
+					    	
+					    		<option value="08001000">経図</option>
+					    	
+					    		<option value="08002000">経図・指定図書</option>
+					    	
+					    		<option value="08003000">経図・資料室</option>
+					    	
+					    		<option value="08004000">経図・収蔵庫</option>
+					    	
+					    		<option value="08005000">経図・保管庫</option>
+					    	
+					    		<option value="09001003">駒場図・2F参考</option>
+					    	
+					    		<option value="09001005">駒場図・雑誌</option>
+					    	
+					    		<option value="09001006">駒場図・3F新聞縮刷</option>
+					    	
+					    		<option value="09001007">駒場図・貴重書</option>
+					    	
+					    		<option value="09001008">駒場図・B1F集密</option>
+					    	
+					    		<option value="09001009">駒場図・B2F集密</option>
+					    	
+					    		<option value="09001011">駒場図・保存</option>
+					    	
+					    		<option value="09001013">駒場図・2FAV</option>
+					    	
+					    		<option value="09001015">駒場図・マイクロ</option>
+					    	
+					    		<option value="09001017">駒場図・B1F集密参考</option>
+					    	
+					    		<option value="09001019">駒場図・保存参考</option>
+					    	
+					    		<option value="09001021">駒場図・一高文庫</option>
+					    	
+					    		<option value="09001023">駒場図・1Fカウンター</option>
+					    	
+					    		<option value="09001031">駒場図・1F開架</option>
+					    	
+					    		<option value="09001033">駒場図・2F開架</option>
+					    	
+					    		<option value="09001035">駒場図・3F開架</option>
+					    	
+					    		<option value="09001037">駒場図・4F開架</option>
+					    	
+					    		<option value="09001038">駒場図・対面朗読室</option>
+					    	
+					    		<option value="09001039">駒場図・2Fシラバス</option>
+					    	
+					    		<option value="09001041">駒場図・3F大型</option>
+					    	
+					    		<option value="09001043">駒場図・B1F大型</option>
+					    	
+					    		<option value="09001045">駒場図・B2F大型</option>
+					    	
+					    		<option value="09001047">駒場図・保存大型</option>
+					    	
+					    		<option value="09010001">教養自図</option>
+					    	
+					    		<option value="09010011">教養自図・物理</option>
+					    	
+					    		<option value="09010013">教養自図・化学</option>
+					    	
+					    		<option value="09010015">教養自図・生物</option>
+					    	
+					    		<option value="09010017">教養自図・宇宙地球</option>
+					    	
+					    		<option value="09010019">教養自図・事務</option>
+					    	
+					    		<option value="09010031">教養自図・基礎科学</option>
+					    	
+					    		<option value="09030000">教養アメ・書庫</option>
+					    	
+					    		<option value="09030001">教養アメ</option>
+					    	
+					    		<option value="09040001">教養・人その他</option>
+					    	
+					    		<option value="09040003">教養・哲学</option>
+					    	
+					    		<option value="09040005">教養・心理学</option>
+					    	
+					    		<option value="09040007">教養・教育学</option>
+					    	
+					    		<option value="09040009">教養・歴史学</option>
+					    	
+					    		<option value="09040011">教養・日本史</option>
+					    	
+					    		<option value="09040013">教養・東洋史</option>
+					    	
+					    		<option value="09040015">教養・西洋史</option>
+					    	
+					    		<option value="09040017">教養・人文地理</option>
+					    	
+					    		<option value="09040021">教養・文化人類</option>
+					    	
+					    		<option value="09040023">教養・国文学</option>
+					    	
+					    		<option value="09040025">教養・漢文学</option>
+					    	
+					    		<option value="09045001">教養・外その他</option>
+					    	
+					    		<option value="09045005">教養・朝鮮語</option>
+					    	
+					    		<option value="09045013">教養・英語</option>
+					    	
+					    		<option value="09045015">教養・独語</option>
+					    	
+					    		<option value="09045017">教養・仏語</option>
+					    	
+					    		<option value="09045019">教養・露語</option>
+					    	
+					    		<option value="09045021">教養・西語</option>
+					    	
+					    		<option value="09045023">教養・中国語</option>
+					    	
+					    		<option value="09045025">教養・日本語</option>
+					    	
+					    		<option value="09045031">教養・古典語</option>
+					    	
+					    		<option value="09050001">教養・国際社会</option>
+					    	
+					    		<option value="09050003">教養・国際社会法学</option>
+					    	
+					    		<option value="09050005">教養・国際社会政治学</option>
+					    	
+					    		<option value="09050007">教養・国際社会経済学</option>
+					    	
+					    		<option value="09050009">教養・国際社会統計学</option>
+					    	
+					    		<option value="09050011">教養・国際社会社会学</option>
+					    	
+					    		<option value="09050013">教養・国際社会社会思想史</option>
+					    	
+					    		<option value="09050015">教養・国際社会国際関係</option>
+					    	
+					    		<option value="09055003">教養・広域広シ情報図形</option>
+					    	
+					    		<option value="09060001">教養・広域生命身体運動科学</option>
+					    	
+					    		<option value="09065001">教養・広域広シ学際科学</option>
+					    	
+					    		<option value="09070000">教養・言語情報</option>
+					    	
+					    		<option value="09070003">教養・HSP</option>
+					    	
+					    		<option value="09070201">教養・GFD</option>
+					    	
+					    		<option value="09070101">教養・GSI</option>
+					    	
+					    		<option value="09080001">教養・視聴覚教室</option>
+					    	
+					    		<option value="09080005">教養・情報教育棟</option>
+					    	
+					    		<option value="09080007">教養・留学生相談室</option>
+					    	
+					    		<option value="09085001">教養・駒場博物館</option>
+					    	
+					    		<option value="09086000">教養・DESK</option>
+					    	
+					    		<option value="09087000">教養・UTCMES</option>
+					    	
+					    		<option value="09091001">教養・超域文化比較</option>
+					    	
+					    		<option value="09091005">教養・超域文化表象</option>
+					    	
+					    		<option value="09093000">教養・地域文化</option>
+					    	
+					    		<option value="10001000">育図・開架</option>
+					    	
+					    		<option value="10001003">育図・管理室</option>
+					    	
+					    		<option value="10001010">育図・雑誌</option>
+					    	
+					    		<option value="10001005">育図・集密</option>
+					    	
+					    		<option value="10001034">育図・マイクロ室</option>
+					    	
+					    		<option value="10001100">育図・研究室</option>
+					    	
+					    		<option value="10001200">育図・医1</option>
+					    	
+					    		<option value="10001204">育図・医1(NCB04)</option>
+					    	
+					    		<option value="10001206">育図・医1(NCB06)</option>
+					    	
+					    		<option value="11001000">薬図</option>
+					    	
+					    		<option value="11001001">薬図・参考図書</option>
+					    	
+					    		<option value="11001004">薬図・薬史学文庫</option>
+					    	
+					    		<option value="11001003">薬図・雑誌</option>
+					    	
+					    		<option value="11002005">薬・天然</option>
+					    	
+					    		<option value="11002011">薬・動態</option>
+					    	
+					    		<option value="11002025">薬・構造</option>
+					    	
+					    		<option value="11002027">薬・分子</option>
+					    	
+					    		<option value="11002029">薬・細情</option>
+					    	
+					    		<option value="11002031">薬・代謝</option>
+					    	
+					    		<option value="11003001">薬・植物園</option>
+					    	
+					    		<option value="12001000">医科研・図</option>
+					    	
+					    		<option value="14000000">地震研・研究部</option>
+					    	
+					    		<option value="14001000">地震研・図書</option>
+					    	
+					    		<option value="14002000">地震研・特別資料室</option>
+					    	
+					    		<option value="15001000">東文研・図</option>
+					    	
+					    		<option value="15002000">東文研・セ</option>
+					    	
+					    		<option value="16000000">社研</option>
+					    	
+					    		<option value="16000001">社研・別置書庫</option>
+					    	
+					    		<option value="16000002">社研・別置書庫A</option>
+					    	
+					    		<option value="16000003">社研・別置書庫B</option>
+					    	
+					    		<option value="16000004">社研・別置書庫C</option>
+					    	
+					    		<option value="16000005">社研・別置書庫D</option>
+					    	
+					    		<option value="16000006">社研・別置書庫E</option>
+					    	
+					    		<option value="16000007">社研・別置書庫F</option>
+					    	
+					    		<option value="16000008">社研・別置書庫G</option>
+					    	
+					    		<option value="16000009">社研・別置書庫H</option>
+					    	
+					    		<option value="17000000">学環・研</option>
+					    	
+					    		<option value="17001000">学環・図</option>
+					    	
+					    		<option value="17002000">学環・セ</option>
+					    	
+					    		<option value="17003000">学環・セ・マイクロ</option>
+					    	
+					    		<option value="18001000">生産研・図書</option>
+					    	
+					    		<option value="18001001">生産研・図遡</option>
+					    	
+					    		<option value="18003000">生産研・研究部</option>
+					    	
+					    		<option value="18003001">生産研・研究部第１部</option>
+					    	
+					    		<option value="18003002">生産研・研究部第２部</option>
+					    	
+					    		<option value="18003003">生産研・研究部第３部</option>
+					    	
+					    		<option value="18003004">生産研・研究部第４部</option>
+					    	
+					    		<option value="18003005">生産研・研究部第５部</option>
+					    	
+					    		<option value="18003006">生産研・電算</option>
+					    	
+					    		<option value="18003007">生産研・試作</option>
+					    	
+					    		<option value="18003008">生産研・映像技術室</option>
+					    	
+					    		<option value="18003009">生産研・組合</option>
+					    	
+					    		<option value="19001000">史料編纂所・図</option>
+					    	
+					    		<option value="21000000">宇宙線研</option>
+					    	
+					    		<option value="21001000">宇宙線研・図書</option>
+					    	
+					    		<option value="21001001">宇宙線研・神岡</option>
+					    	
+					    		<option value="21001002">宇宙線研・ミューニ</option>
+					    	
+					    		<option value="21001003">宇宙線研・空気シャ</option>
+					    	
+					    		<option value="21001004">宇宙線研・エマルシ</option>
+					    	
+					    		<option value="21001005">宇宙線研・理論</option>
+					    	
+					    		<option value="21001006">宇宙線研・一次線</option>
+					    	
+					    		<option value="21001007">宇宙線研・重力波</option>
+					    	
+					    		<option value="21001008">宇宙線研・SDSS</option>
+					    	
+					    		<option value="23000000">物性研・雑誌</option>
+					    	
+					    		<option value="23001000">物性研・図書</option>
+					    	
+					    		<option value="23003000">物性研・超強磁場</option>
+					    	
+					    		<option value="23005000">物性研・レーザー</option>
+					    	
+					    		<option value="23007000">物性研・表面物性</option>
+					    	
+					    		<option value="23009000">物性研・超低温物</option>
+					    	
+					    		<option value="23011000">物性研・超高圧</option>
+					    	
+					    		<option value="23013000">物性研・軌道放射</option>
+					    	
+					    		<option value="23015000">物性研・中性子散乱</option>
+					    	
+					    		<option value="23017000">物性研・凝縮系物</option>
+					    	
+					    		<option value="23019000">物性研・新物質開</option>
+					    	
+					    		<option value="23021000">物性研・理論</option>
+					    	
+					    		<option value="23023000">物性研・共通施設</option>
+					    	
+					    		<option value="23025000">物性研・研究技術室</option>
+					    	
+					    		<option value="23027000">物性研・研究部門</option>
+					    	
+					    		<option value="24001000">大海研・図</option>
+					    	
+					    		<option value="24000000">大海研・書庫</option>
+					    	
+					    		<option value="24001061">大海研・海洋物理</option>
+					    	
+					    		<option value="24001063">大海研・海洋化学</option>
+					    	
+					    		<option value="24001065">大海研・海洋地球科学</option>
+					    	
+					    		<option value="24001067">大海研・海洋生態系</option>
+					    	
+					    		<option value="24001069">大海研・海洋生命</option>
+					    	
+					    		<option value="24001071">大海研・海洋生物資源</option>
+					    	
+					    		<option value="24001077">大海研・海洋学際領域</option>
+					    	
+					    		<option value="24001081">大海研・国際連携セ</option>
+					    	
+					    		<option value="24001083">大海研・大槌沿岸セ</option>
+					    	
+					    		<option value="24001085">大海研・奄美沿岸セ</option>
+					    	
+					    		<option value="24001089">大海研・アライアンス</option>
+					    	
+					    		<option value="24001091">大海研・陸上研究</option>
+					    	
+					    		<option value="24001093">大海研・観測研究</option>
+					    	
+					    		<option value="24001095">大海研・沿岸研究</option>
+					    	
+					    		<option value="24001097">大海研・気候研究</option>
+					    	
+					    		<option value="24001101">大海研・地球表層圏セ</option>
+					    	
+					    		<option value="24001050">大海研・気候系</option>
+					    	
+					    		<option value="33000000">公共</option>
+					    	
+					    		<option value="33001000">公共・法図</option>
+					    	
+					    		<option value="34000000">先端研・図書</option>
+					    	
+					    		<option value="36001000">数理科学・図書</option>
+					    	
+					    		<option value="36004000">数理科学・保存</option>
+					    	
+					    		<option value="36005000">数理科学・保存一研</option>
+					    	
+					    		<option value="36006000">数理科学・保存基数</option>
+					    	
+					    		<option value="41001001">柏図・開架</option>
+					    	
+					    		<option value="41001002">柏図・開架2</option>
+					    	
+					    		<option value="41001003">柏図・参考</option>
+					    	
+					    		<option value="41001005">柏図・雑誌</option>
+					    	
+					    		<option value="41001007">柏図・貴重書</option>
+					    	
+					    		<option value="41001009">柏図・AV</option>
+					    	
+					    		<option value="41001011">柏図・書庫</option>
+					    	
+					    		<option value="41001012">柏図・書庫2</option>
+					    	
+					    		<option value="41001015">柏図・研究室</option>
+					    	
+					    		<option value="41002001">柏数物・開架</option>
+					    	
+					    		<option value="41002002">柏数物・参考</option>
+					    	
+					    		<option value="41002003">柏数物・別置S</option>
+					    	
+					    		<option value="41002005">柏数物・日本語</option>
+					    	
+					    		<option value="41002006">柏数物・書庫(別置S)</option>
+					    	
+					    		<option value="81000000">総研博</option>
+					    	
+					    </select>
+					</label>
+				
+				
+					<label>
+						<span class="search-option-title">文庫区分:</span>
+						<select name="lib_exp">
+							
+					    		<option value="">(指定なし)</option>
+					    	
+					    		<option value="233">１９世紀フランス政治史集成 (総)</option>
+					    	
+					    		<option value="012">DGB文書 (社研)</option>
+					    	
+					    		<option value="004">F.Baadeコレクション (社研)</option>
+					    	
+					    		<option value="260">GENKI BOOKS (駒)</option>
+					    	
+					    		<option value="270">Haeckel文庫 (駒)</option>
+					    	
+					    		<option value="280">Hearn文庫 (文)</option>
+					    	
+					    		<option value="001">Knoll文庫 (工)</option>
+					    	
+					    		<option value="315">R.M.Savory氏旧蔵書 (東文研)</option>
+					    	
+					    		<option value="180">アダム・スミス文庫 (経)</option>
+					    	
+					    		<option value="210">阿川文庫 (総)</option>
+					    	
+					    		<option value="070">荒木文庫 (東文研)</option>
+					    	
+					    		<option value="282">姉崎文庫 (文)</option>
+					    	
+					    		<option value="193">秋丸資料 (経)</option>
+					    	
+					    		<option value="329">秋葉文庫 (総)</option>
+					    	
+					    		<option value="182">足尾銅山鉱毒問題コレクション (経)</option>
+					    	
+					    		<option value="170">有賀文庫 (法)</option>
+					    	
+					    		<option value="171">有栖川文庫 (法)</option>
+					    	
+					    		<option value="184">有沢資料 (経)</option>
+					    	
+					    		<option value="183">有沢図書 (経)</option>
+					    	
+					    		<option value="237">イタリア・ルネサンス文芸集成 (総)</option>
+					    	
+					    		<option value="030">伊藤文庫 (東文研)</option>
+					    	
+					    		<option value="220">維新史料引継本 (史)</option>
+					    	
+					    		<option value="338">井手三郎文庫 (明治)</option>
+					    	
+					    		<option value="031">一高同窓会文庫 (駒)</option>
+					    	
+					    		<option value="271">一高文庫</option>
+					    	
+					    		<option value="032">稲葉文庫 (学環)</option>
+					    	
+					    		<option value="050">岩生文庫 (史)</option>
+					    	
+					    		<option value="304">今井登志喜文庫 (文)</option>
+					    	
+					    		<option value="290">今村文庫 (文)</option>
+					    	
+					    		<option value="074">今堀文庫 (東文研)</option>
+					    	
+					    		<option value="299">市河文庫 (文)</option>
+					    	
+					    		<option value="033">糸井文庫 (社研)</option>
+					    	
+					    		<option value="093">出淵文庫 (教養)</option>
+					    	
+					    		<option value="117">石本文庫 (総,地震研)</option>
+					    	
+					    		<option value="151">飯塚文庫 (育)</option>
+					    	
+					    		<option value="003">ヴェーラ文庫 (総)</option>
+					    	
+					    		<option value="035">宇野文庫 (社研)</option>
+					    	
+					    		<option value="342">上田榮二郎文庫 (農)</option>
+					    	
+					    		<option value="150">内田文庫 (理図)</option>
+					    	
+					    		<option value="005">エリオット文庫 (総)</option>
+					    	
+					    		<option value="006">エンゲル文庫 (経)</option>
+					    	
+					    		<option value="234">英国外務省機密外交資料 (総)</option>
+					    	
+					    		<option value="273">江戸古版本 (駒)</option>
+					    	
+					    		<option value="268">江口文庫 (駒)</option>
+					    	
+					    		<option value="068">江上文庫 (東文研)</option>
+					    	
+					    		<option value="007">オウエン文庫 (経)</option>
+					    	
+					    		<option value="036">鴎外文庫 (総)</option>
+					    	
+					    		<option value="037">岡村文庫 (総)</option>
+					    	
+					    		<option value="206">岡百世文庫 (総)</option>
+					    	
+					    		<option value="039">岡部文庫 (駒)</option>
+					    	
+					    		<option value="337">岡文庫 (明治)</option>
+					    	
+					    		<option value="094">緒方洪庵記念文庫 (総)</option>
+					    	
+					    		<option value="287">小倉文庫 (文)</option>
+					    	
+					    		<option value="294">小田嶽夫文庫 (文)</option>
+					    	
+					    		<option value="100">小野塚文庫 (法)</option>
+					    	
+					    		<option value="175">大隈文庫 (法)</option>
+					    	
+					    		<option value="124">大西博士記念文庫 (文)</option>
+					    	
+					    		<option value="331">大津本 (経)</option>
+					    	
+					    		<option value="300">大塚博士記念文庫 (文)</option>
+					    	
+					    		<option value="126">大木文庫 (東文研)</option>
+					    	
+					    		<option value="201">カルプツォフ・コレクション (総)</option>
+					    	
+					    		<option value="040">河合文庫 (駒)</option>
+					    	
+					    		<option value="198">華北交通資料 (経)</option>
+					    	
+					    		<option value="043">霞亭文庫 (総)</option>
+					    	
+					    		<option value="046">海軍文庫</option>
+					    	
+					    		<option value="346">外骨書函 (明治)</option>
+					    	
+					    		<option value="204">覚廬本 (総)</option>
+					    	
+					    		<option value="052">亀井文庫 (総)</option>
+					    	
+					    		<option value="062">金澤二郎記念文庫 (総)</option>
+					    	
+					    		<option value="207">広東籌賑日災総会寄贈本 (総)</option>
+					    	
+					    		<option value="106">上村文庫 (東文研)</option>
+					    	
+					    		<option value="218">辛島昇文庫 (総アジア)</option>
+					    	
+					    		<option value="262">柏文庫 (駒)</option>
+					    	
+					    		<option value="216">槐南文庫 (総)</option>
+					    	
+					    		<option value="166">鶚軒文庫 (総)</option>
+					    	
+					    		<option value="008">キルヘンハイム文庫 (法)</option>
+					    	
+					    		<option value="048">岸上文庫 (地震研)</option>
+					    	
+					    		<option value="049">岸本文庫 (文)</option>
+					    	
+					    		<option value="221">菊池大麓男爵旧蔵書 (史)</option>
+					    	
+					    		<option value="230">救貧法・社会福祉コレクション (総)</option>
+					    	
+					    		<option value="208">近代フランス教育学集成 (総)</option>
+					    	
+					    		<option value="231">近代欧州政治思想史集成 (総)</option>
+					    	
+					    		<option value="114">清野文庫 (東文研)</option>
+					    	
+					    		<option value="222">木戸家旧蔵書 (史)</option>
+					    	
+					    		<option value="301">木村日紀文庫  (文)</option>
+					    	
+					    		<option value="272">木谷文庫 (駒)</option>
+					    	
+					    		<option value="160">木内文庫 (総)</option>
+					    	
+					    		<option value="197">クナップ図書 (経)</option>
+					    	
+					    		<option value="009">グレイ文庫 (法)</option>
+					    	
+					    		<option value="324">呉秀三文庫 (医)</option>
+					    	
+					    		<option value="293">呉文庫 (文)</option>
+					    	
+					    		<option value="303">工藤光一文庫 (文)</option>
+					    	
+					    		<option value="296">黒川文庫 (文)</option>
+					    	
+					    		<option value="073">黒田文庫 (駒)</option>
+					    	
+					    		<option value="263">黒木文庫 (教養)</option>
+					    	
+					    		<option value="119">倉石文庫 (東文研)</option>
+					    	
+					    		<option value="321">陸井三郎文庫 (CPAS)</option>
+					    	
+					    		<option value="318">現代台湾文庫 (東文研)</option>
+					    	
+					    		<option value="320">現代中国文庫 (東文研)</option>
+					    	
+					    		<option value="041">河本文庫 (総)</option>
+					    	
+					    		<option value="042">河野文庫 (文)</option>
+					    	
+					    		<option value="172">近藤記念海事財団文庫 (法)</option>
+					    	
+					    		<option value="316">近藤文庫 (東文研)</option>
+					    	
+					    		<option value="199">公企業会計関係資料 (経)</option>
+					    	
+					    		<option value="240">工学寮旧蔵書</option>
+					    	
+					    		<option value="241">工部大学校旧蔵書</option>
+					    	
+					    		<option value="189">国民経済研究協会図書 (経)</option>
+					    	
+					    		<option value="099">小寺文庫 (法)</option>
+					    	
+					    		<option value="341">佐々木忠次郎文庫 (農)</option>
+					    	
+					    		<option value="322">佐伯彰一文庫 (CPAS)</option>
+					    	
+					    		<option value="311">坂本文庫 (東文研)</option>
+					    	
+					    		<option value="076">阪谷文書 (社研)</option>
+					    	
+					    		<option value="209">桜井由躬雄文庫 (総アジア)</option>
+					    	
+					    		<option value="081">三條文庫 (総)</option>
+					    	
+					    		<option value="010">シュネル文庫 (総)</option>
+					    	
+					    		<option value="038">下中文庫 (東文研)</option>
+					    	
+					    		<option value="261">資源科学研究所旧蔵本草書 (駒)</option>
+					    	
+					    		<option value="109">信貴文庫 (駒)</option>
+					    	
+					    		<option value="188">新左翼関係資料 (経)</option>
+					    	
+					    		<option value="284">神道研究室旧蔵書 (文)</option>
+					    	
+					    		<option value="141">島薗文庫 (医)</option>
+					    	
+					    		<option value="286">島田文庫 (文)</option>
+					    	
+					    		<option value="107">島田文書 (社研)</option>
+					    	
+					    		<option value="165">洒竹文庫 (総)</option>
+					    	
+					    		<option value="159">末延文庫 (総)</option>
+					    	
+					    		<option value="213">末廣昭文庫 (総アジア)</option>
+					    	
+					    		<option value="163">鈴木敬文庫 (東文研,駒)</option>
+					    	
+					    		<option value="343">鈴木梅太郎・文助文庫 (農)</option>
+					    	
+					    		<option value="116">青洲文庫 (総)</option>
+					    	
+					    		<option value="239">舌耕文芸関係資料 (総)</option>
+					    	
+					    		<option value="161">夕嵐草堂文庫 (東文研)</option>
+					    	
+					    		<option value="108">十河信二氏寄贈書 (社研)</option>
+					    	
+					    		<option value="328">雙紅堂文庫 (東文研)</option>
+					    	
+					    		<option value="200">ダンテ・コレクション (総)</option>
+					    	
+					    		<option value="269">玉蟲文庫 (駒)</option>
+					    	
+					    		<option value="071">高木八尺文庫 (CPAS)</option>
+					    	
+					    		<option value="122">台湾文庫 (法)</option>
+					    	
+					    		<option value="274">大日本海志編纂資料 (駒)</option>
+					    	
+					    		<option value="295">大總本 (文)</option>
+					    	
+					    		<option value="128">滝川勉文庫 (東文研)</option>
+					    	
+					    		<option value="129">瀧田文庫 (文)</option>
+					    	
+					    		<option value="215">谷文庫 (総)</option>
+					    	
+					    		<option value="132">竹内博士記念文庫 (文)</option>
+					    	
+					    		<option value="298">田丸文庫 (文)</option>
+					    	
+					    		<option value="047">田中舘文庫 (地震研)</option>
+					    	
+					    		<option value="313">田中健夫旧蔵図書 (史)</option>
+					    	
+					    		<option value="317">田中則雄氏旧蔵書 (東文研)</option>
+					    	
+					    		<option value="135">田中二郎文庫 (総)</option>
+					    	
+					    		<option value="289">田中文庫 (文)</option>
+					    	
+					    		<option value="137">田中芳男文庫 (総)</option>
+					    	
+					    		<option value="176">田部文庫 (法)</option>
+					    	
+					    		<option value="323">龍口直太郎文庫 (CPAS)</option>
+					    	
+					    		<option value="202">チベット・コレクション (総)</option>
+					    	
+					    		<option value="288">千輪文庫 (文)</option>
+					    	
+					    		<option value="115">知十文庫 (総)</option>
+					    	
+					    		<option value="130">痴遊文庫 (学環)</option>
+					    	
+					    		<option value="330">竹冷文庫 (総)</option>
+					    	
+					    		<option value="340">津野慶太郎文庫 (農)</option>
+					    	
+					    		<option value="192">土屋資料 (経)</option>
+					    	
+					    		<option value="277">寺澤芳雄文庫 (教養)</option>
+					    	
+					    		<option value="190">手塚図書 (経)</option>
+					    	
+					    		<option value="242">帝国大学工科大学書房旧蔵書</option>
+					    	
+					    		<option value="194">戸原本 (経)</option>
+					    	
+					    		<option value="091">時實文庫 (医)</option>
+					    	
+					    		<option value="223">所荘吉旧蔵洋書コレクション (史)</option>
+					    	
+					    		<option value="276">東京高校文庫</option>
+					    	
+					    		<option value="187">東銀本 (経,東文研)</option>
+					    	
+					    		<option value="235">東南アジア経済圏統計資料 (総)</option>
+					    	
+					    		<option value="145">同窓会ジャーナリズム文庫 (学環)</option>
+					    	
+					    		<option value="312">永積洋子旧蔵図書 (史)</option>
+					    	
+					    		<option value="034">永尾文庫 (東文研)</option>
+					    	
+					    		<option value="217">永峰秀樹氏旧蔵本 (総)</option>
+					    	
+					    		<option value="267">中村文庫 (駒)</option>
+					    	
+					    		<option value="133">中田文庫 (法)</option>
+					    	
+					    		<option value="113">中野本 (総)</option>
+					    	
+					    		<option value="333">中里文庫 (東文研)</option>
+					    	
+					    		<option value="152">仲文庫 (育)</option>
+					    	
+					    		<option value="325">長澤文庫 (東文研)</option>
+					    	
+					    		<option value="219">奈良毅文庫 (総アジア)</option>
+					    	
+					    		<option value="146">南葵文庫 (総)</option>
+					    	
+					    		<option value="196">新渡戸図書 (経)</option>
+					    	
+					    		<option value="112">仁井田文庫 (東文研)</option>
+					    	
+					    		<option value="205">西山五郎本 (総)</option>
+					    	
+					    		<option value="147">二宮文庫 (文)</option>
+					    	
+					    		<option value="310">日本ネパール協会旧蔵資料 (東文研)</option>
+					    	
+					    		<option value="232">日露戦争コレクション (総)</option>
+					    	
+					    		<option value="011">ノイベッカー文庫 (法)</option>
+					    	
+					    		<option value="243">野呂文庫 (工)</option>
+					    	
+					    		<option value="275">バフワーン文庫 (教養)</option>
+					    	
+					    		<option value="149">萩原文庫 (理図)</option>
+					    	
+					    		<option value="211">萩野本 (総)</option>
+					    	
+					    		<option value="236">万国博覧会資料コレクション (総)</option>
+					    	
+					    		<option value="162">林文庫 (文)</option>
+					    	
+					    		<option value="017">ヒルシュフェルド文庫 (総)</option>
+					    	
+					    		<option value="019">ピンソン文庫 (医)</option>
+					    	
+					    		<option value="018">フランス二月革命コレクション (社研)</option>
+					    	
+					    		<option value="020">プロイス文庫 (法)</option>
+					    	
+					    		<option value="214">古田元夫文庫 (総アジア)</option>
+					    	
+					    		<option value="339">古島敏雄文庫 (農)</option>
+					    	
+					    		<option value="142">藤井文庫 (総)</option>
+					    	
+					    		<option value="143">藤原文庫 (文)</option>
+					    	
+					    		<option value="148">藤田文庫 (理図)</option>
+					    	
+					    		<option value="292">布施記念文庫 (文)</option>
+					    	
+					    		<option value="021">ポーランド法コレクション (社研)</option>
+					    	
+					    		<option value="144">細川文庫 (社研)</option>
+					    	
+					    		<option value="332">穂積陳重文庫 (総)</option>
+					    	
+					    		<option value="265">堀文庫 (駒)</option>
+					    	
+					    		<option value="022">マックス・ミュラー文庫 (文)</option>
+					    	
+					    		<option value="101">松村文庫 (文)</option>
+					    	
+					    		<option value="178">松本烝治文庫 (法)</option>
+					    	
+					    		<option value="266">前田文庫 (駒)</option>
+					    	
+					    		<option value="264">待鳥文庫 (教養)</option>
+					    	
+					    		<option value="191">舞出図書 (経)</option>
+					    	
+					    		<option value="185">眞板資料 (経)</option>
+					    	
+					    		<option value="056">宮部文庫 (教養)</option>
+					    	
+					    		<option value="077">三浦文庫 (文)</option>
+					    	
+					    		<option value="079">三宅文庫 (医)</option>
+					    	
+					    		<option value="080">三谷文庫 (駒)</option>
+					    	
+					    		<option value="195">三菱本 (経)</option>
+					    	
+					    		<option value="212">水戸徳川林制資料 (総)</option>
+					    	
+					    		<option value="334">水島司文庫（総アジア）</option>
+					    	
+					    		<option value="157">峰尾文庫 (駒)</option>
+					    	
+					    		<option value="173">箕作文庫 (法)</option>
+					    	
+					    		<option value="121">村川文庫 (教養)</option>
+					    	
+					    		<option value="181">メンガー文庫 (経)</option>
+					    	
+					    		<option value="140">明治期洋書教科書コレクション (総)</option>
+					    	
+					    		<option value="024">モース文庫 (総)</option>
+					    	
+					    		<option value="174">持地文庫 (法)</option>
+					    	
+					    		<option value="110">森恭三文庫 (学環)</option>
+					    	
+					    		<option value="326">森祖道文庫 (東文研)</option>
+					    	
+					    		<option value="281">森文庫 (文)</option>
+					    	
+					    		<option value="297">本居文庫 (文)</option>
+					    	
+					    		<option value="344">ヤンソン文庫 (農)</option>
+					    	
+					    		<option value="082">山崎文庫 (東文研)</option>
+					    	
+					    		<option value="285">山中文庫 (文)</option>
+					    	
+					    		<option value="085">山田文庫 (文)</option>
+					    	
+					    		<option value="086">山之内文庫 (社研)</option>
+					    	
+					    		<option value="291">八木文庫 (文)</option>
+					    	
+					    		<option value="319">矢吹慶輝氏旧蔵書 (東文研)</option>
+					    	
+					    		<option value="167">矢内原文庫 (駒)</option>
+					    	
+					    		<option value="336">薬史学文庫（薬）</option>
+					    	
+					    		<option value="283">柳川文庫 (文)</option>
+					    	
+					    		<option value="335">柳澤悠文庫（総アジア）</option>
+					    	
+					    		<option value="060">油井文庫 (柏)</option>
+					    	
+					    		<option value="156">米川文庫 (駒)</option>
+					    	
+					    		<option value="002">ラーデル文庫 (総)</option>
+					    	
+					    		<option value="013">ライン文庫 (総)</option>
+					    	
+					    		<option value="026">リーバアマン文庫 (総)</option>
+					    	
+					    		<option value="327">両紅軒文庫 (東文研)</option>
+					    	
+					    		<option value="203">ルター・コレクション (総)</option>
+					    	
+					    		<option value="302">ルフェーブル文庫 (文)</option>
+					    	
+					    		<option value="238">ローマ法コレクション (総)</option>
+					    	
+					    		<option value="179">ロンドン日本協会文庫 (法)</option>
+					    	
+					    		<option value="345">蝋山政道・道雄文庫 (法)</option>
+					    	
+					    		<option value="164">蝋山文庫 (駒)</option>
+					    	
+					    		<option value="027">ワッハ文庫 (法)</option>
+					    	
+					    		<option value="029">ワルダイエル文庫 (医)</option>
+					    	
+					    		<option value="045">我妻文庫 (東文研,法)</option>
+					    	
+					    		<option value="177">若槻文庫 (法)</option>
+					    	
+					    		<option value="139">渡部文庫 (総)</option>
+					    	
+					    		<option value="186">脇村本 (経)</option>
+					    	
+					    </select>
+					</label>
+				
+				
+			</div><!--/#select-option-->
+		</div><!--/.row-->
+	</div>
+</div>
+
+									</div>
+								
+									
+									<div id="panel_advanced_5" class="tab-pane">
+										
+
+
+<div class="ciniibooks-advanced sub-panel">
+	<div class="row">
+		<div class="col-md-9 search-condition">
+			
+			<div class="col">
+				<span class="title">資料区分:</span>
+				
+					
+					<span><label class="checkbox-margin" for="ciniibooks_file_exp1"><input id="ciniibooks_file_exp1" type="checkbox" name="ciniibooks_file_exp[]" value="1"/>図書<input type="hidden" name="ciniibooks_vfile_exp" value="10" /><input type="hidden" name="ciniibooks_jf_exp" value="" /></label></span>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+					<span><label class="checkbox-margin" for="ciniibooks_file_exp5"><input id="ciniibooks_file_exp5" type="checkbox" name="ciniibooks_file_exp[]" value="5"/>雑誌<input type="hidden" name="ciniibooks_vfile_exp" value="20" /><input type="hidden" name="ciniibooks_jf_exp" value="" /></label></span>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+		  	</div>
+		  	
+		  	<div class="col">
+				<span class="title">全ての項目:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="default_ciniibooks" name="default_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">タイトル:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="titlekey_ja_ciniibooks" name="titlekey_ja_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">タイトル(完全形):</span>
+				<input type="text" class="text_kywd" maxlength="256" id="ftitlekey_ciniibooks" name="ftitlekey_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+		  	</div>
+		</div><!--/#search-condition-->
+		<div class="col-md-3">
+			<div class="search-ad-btn">
+				<button type="button" class="btn btn-primary btn-left-square" onclick="SearchClick('ciniibooks_expart', 'search');return false;"><span class="icon-opac_search size-small"></span>検索</button>
+				<button type="button" class="btn btn-clear" onclick="ciniibooksclearClick();return false;"><span class="glyphicon glyphicon-erase"></span>クリア</button>
+			</div><!--/.search-ad-btn-->
+		</div>
+	</div>
+	<div class="row">
+		<div class="search-option">
+			<div class="clearfix">
+				<div class="col">
+					<span class="title">著者名:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="alkey_ciniibooks" name="alkey_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+				<div class="col">
+					<span class="title">著者名典拠ID:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="auid_ciniibooks" name="auid_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+				<div class="col">
+					<span class="title">出版者:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="pubkey_ciniibooks" name="pubkey_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+		  	</div>
+		  	<div class="clearfix">
+				<div class="col">
+					<span class="title">ISBN:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="isbn_ciniibooks" name="isbn_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+				<div class="col">
+					<span class="title">ISSN:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="issn_ciniibooks" name="issn_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+				<div class="col">
+					<span class="title">NCID:</span>
+					<input type="text" class="text_kywd" maxlength="10" id="ncid_ciniibooks" name="ncid_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+		  	</div>
+		  	<div class="clearfix">
+				<div class="col">
+					<span class="title">件名:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="shkey_ciniibooks" name="shkey_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+				<div class="col">
+					<span class="title">分類:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="clskey_ciniibooks" name="clskey_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+				<div class="col">
+					<span class="title">注記:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="note_ciniibooks" name="note_ciniibooks" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+		  	</div>
+		  	<div class="clearfix">
+		  		<div class="col">
+					<span class="title">出版年:</span>
+					<input type="text" class="text_year" name="year1_ciniibooks" id="year1_ciniibooks" maxlength="4" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+		 			&ndash;
+		    		<input type="text" class="text_year" name="year2_ciniibooks" id="year2_ciniibooks" maxlength="4" value="" onkeydown="return EnterEvent(event.keyCode,'ciniibooks_expart', 'search');" />
+				</div>
+		  	</div>
+			
+			  	<div class="clearfix">
+					<div class="col">
+						<span class="title">言語:</span>
+						<select name="txtl_ciniibooks" id="txtl_ciniibooks">
+						    
+						    	<option value="0">(指定なし)</option>
+						    
+						    	<option value="1">日本語</option>
+						    
+						    	<option value="2">英語</option>
+						    
+						    	<option value="3">中国語</option>
+						    
+						    	<option value="4">朝鮮語</option>
+						    
+						    	<option value="5">アイスランド語</option>
+						    
+						    	<option value="6">アイルランド語</option>
+						    
+						    	<option value="7">アゼルバイジャン語</option>
+						    
+						    	<option value="8">アッサム語</option>
+						    
+						    	<option value="9">アフリカーンス語</option>
+						    
+						    	<option value="10">アムハラ語</option>
+						    
+						    	<option value="11">アラビア語</option>
+						    
+						    	<option value="12">アルバニア語</option>
+						    
+						    	<option value="13">アルメニア語</option>
+						    
+						    	<option value="14">イタリア語</option>
+						    
+						    	<option value="15">イディッシュ語</option>
+						    
+						    	<option value="16">イロカノ語</option>
+						    
+						    	<option value="17">インドネシア語・ジャワ語</option>
+						    
+						    	<option value="18">ウイグル語</option>
+						    
+						    	<option value="19">ウェールズ語</option>
+						    
+						    	<option value="20">ウクライナ語</option>
+						    
+						    	<option value="21">ウズベク語</option>
+						    
+						    	<option value="22">ウルドゥー語</option>
+						    
+						    	<option value="23">エストニア語</option>
+						    
+						    	<option value="24">エスペラント</option>
+						    
+						    	<option value="25">オスマントルコ語</option>
+						    
+						    	<option value="26">オランダ語</option>
+						    
+						    	<option value="27">カザーフ語</option>
+						    
+						    	<option value="28">カタロニア語</option>
+						    
+						    	<option value="29">ガリシア語</option>
+						    
+						    	<option value="30">教会スラブ語・スラブ諸語</option>
+						    
+						    	<option value="31">キルギス語</option>
+						    
+						    	<option value="32">グジャラーティー語</option>
+						    
+						    	<option value="33">クメール語</option>
+						    
+						    	<option value="34">グルジア語</option>
+						    
+						    	<option value="35">クロアチア語</option>
+						    
+						    	<option value="36">現代ギリシャ語</option>
+						    
+						    	<option value="37">古代ギリシャ語</option>
+						    
+						    	<option value="38">サンスクリット語</option>
+						    
+						    	<option value="39">シンハリーズ語</option>
+						    
+						    	<option value="40">スウェーデン語</option>
+						    
+						    	<option value="41">スペイン語</option>
+						    
+						    	<option value="42">スロヴァキア語</option>
+						    
+						    	<option value="43">スロヴェニア語</option>
+						    
+						    	<option value="44">スワヒリ語</option>
+						    
+						    	<option value="45">スンダ語</option>
+						    
+						    	<option value="46">セルビア語</option>
+						    
+						    	<option value="47">タイ語・タイ諸語</option>
+						    
+						    	<option value="48">タガログ語</option>
+						    
+						    	<option value="49">タジク語</option>
+						    
+						    	<option value="50">タタール語</option>
+						    
+						    	<option value="51">タミル語</option>
+						    
+						    	<option value="52">チェコ語</option>
+						    
+						    	<option value="53">チベット語・チベット諸語</option>
+						    
+						    	<option value="54">中米インディアン諸語</option>
+						    
+						    	<option value="55">デンマーク語</option>
+						    
+						    	<option value="56">ドイツ語</option>
+						    
+						    	<option value="57">トルコ語</option>
+						    
+						    	<option value="58">ネパール語</option>
+						    
+						    	<option value="59">ネワール語</option>
+						    
+						    	<option value="60">ノルウェー語</option>
+						    
+						    	<option value="61">パーリ語</option>
+						    
+						    	<option value="62">ハウサ語</option>
+						    
+						    	<option value="63">バスク語</option>
+						    
+						    	<option value="64">ハンガリー語</option>
+						    
+						    	<option value="65">パンジャブ語</option>
+						    
+						    	<option value="66">ビルマ語</option>
+						    
+						    	<option value="67">ヒンディー語</option>
+						    
+						    	<option value="68">フィン語・フィン諸語</option>
+						    
+						    	<option value="69">プラークリット諸語</option>
+						    
+						    	<option value="70">フランス語</option>
+						    
+						    	<option value="71">ブルガリア語</option>
+						    
+						    	<option value="72">ベトナム語</option>
+						    
+						    	<option value="73">ヘブライ語</option>
+						    
+						    	<option value="74">ベラルーシ語</option>
+						    
+						    	<option value="75">ペルシャ語</option>
+						    
+						    	<option value="76">ベンガル語</option>
+						    
+						    	<option value="77">ポーランド語</option>
+						    
+						    	<option value="78">ボスニア語</option>
+						    
+						    	<option value="79">ポルトガル語</option>
+						    
+						    	<option value="80">マイティリー語</option>
+						    
+						    	<option value="81">マケドニア語</option>
+						    
+						    	<option value="82">マヤ語族</option>
+						    
+						    	<option value="83">マラーティー語</option>
+						    
+						    	<option value="84">マライ語</option>
+						    
+						    	<option value="85">マラヤーラム語</option>
+						    
+						    	<option value="86">モンゴル語</option>
+						    
+						    	<option value="87">ラージャスターニー語</option>
+						    
+						    	<option value="88">ラオ語</option>
+						    
+						    	<option value="89">ラテン語</option>
+						    
+						    	<option value="90">ラトヴィア語</option>
+						    
+						    	<option value="91">リトアニア語</option>
+						    
+						    	<option value="92">ルーマニア語</option>
+						    
+						    	<option value="93">ロシア語</option>
+						    
+						    	<option value="94">7種以上の言語</option>
+						    
+						    	<option value="95">言語名不明</option>
+						    
+					    </select>
+					</div>
+				</div>
+			
+			
+				<div class="clearfix">
+				
+					<div class="col">
+						<span class="title">並び順:</span>
+						<select name="sort_ciniibooks" id="sort_ciniibooks">
+							
+			        			<option value="3">出版年：新しい順</option>
+			      			
+			        			<option value="2">出版年：古い順</option>
+			      			
+			        			<option value="5">所蔵館：多い順</option>
+			      			
+			        			<option value="4">所蔵館：少ない順</option>
+			      			
+			        			<option value="6">タイトル：五十音順</option>
+			      			
+			        			<option value="7">タイトル：五十音逆順</option>
+			      			
+			        			<option value="1">関連度</option>
+			      			
+			    		</select>
+					</div>
+				
+				
+					<div class="col nextcol">
+						<span class="title">一覧表示件数:</span>
+						<select name="ciniibooks_disp" id="ciniibooks_disp">
+							
+								<option value="20" selected="selected">20</option>
+							
+								<option value="50">50</option>
+							
+								<option value="100">100</option>
+							
+								<option value="200">200</option>
+							
+								<option value="500">500</option>
+							
+						</select>
+					</div>
+				
+				</div>
+			
+		</div>
+	</div>
+</div><!-- /panel_5_class -->
+
+									</div>
+								
+									
+									<div id="panel_advanced_3" class="tab-pane">
+										
+
+
+<div class="cinii-advanced sub-panel">
+	<div class="row">
+		<div class="col-md-9 search-condition">
+			<div class="col">
+				<span class="title">全ての項目:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="default_cinii" name="default_cinii" value="" onkeydown="return EnterEvent(event.keyCode,'cinii_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">論文名:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="ftitlekey_cinii" name="ftitlekey_cinii" value="" onkeydown="return EnterEvent(event.keyCode,'cinii_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">著者名:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="alkey_cinii" name="alkey_cinii" value="" onkeydown="return EnterEvent(event.keyCode,'cinii_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">刊行物名:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="titlekey_ja_cinii" name="titlekey_ja_cinii" value="" onkeydown="return EnterEvent(event.keyCode,'cinii_expart', 'search');" />
+		  	</div>
+		  	
+				<div class="clearfix search-option">
+				
+					<div class="col">
+						<span class="title">並び順:</span>
+						<select name="sort_cinii" id="sort_cinii">
+							
+			        			<option value="0">出版年：新しい順</option>
+			      			
+			        			<option value="1">出版年：古い順</option>
+			      			
+			        			<option value="10">被引用件数：多い順</option>
+			      			
+			        			<option value="4">関連度順</option>
+			      			
+			    		</select>
+					</div>
+				
+			  	
+				  	<div class="col nextcol">
+						<span class="title">一覧表示件数:</span>
+						<select id="cinii_disp" name="cinii_disp">
+							
+								<option value="20" selected="selected">20</option>
+							
+								<option value="50">50</option>
+							
+								<option value="100">100</option>
+							
+								<option value="200">200</option>
+							
+								
+							
+						</select>
+				  	</div>
+				
+				</div>
+			
+		</div><!--/#search-condition-->
+		<div class="col-md-3">
+			<div class="search-ad-btn">
+				<button type="button" class="btn btn-primary btn-left-square" onclick="SearchClick('cinii_expart', 'search');return false;"><span class="icon-opac_search size-small"></span>検索</button>
+				<button type="button" class="btn btn-clear" onclick="ciniiclearClick('expart', '');return false;"><span class="glyphicon glyphicon-erase"></span>クリア</button>
+			</div><!--/.search-ad-btn-->
+		</div>
+	</div>
+</div><!-- /.cinii-advanced -->
+
+									</div>
+								
+									
+									<div id="panel_advanced_4" class="tab-pane">
+										
+
+
+<div class="jairo-advanced sub-panel">
+	<div class="row">
+		<div class="col-md-9 search-condition">
+			<div class="col">
+				<span class="title">全ての項目:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="default_jairo" name="default_jairo" value="" onkeydown="return EnterEvent(event.keyCode,'jairo_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">タイトル:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="ftitlekey_jairo" name="ftitlekey_jairo" value="" onkeydown="return EnterEvent(event.keyCode,'jairo_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">著者名:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="alkey_jairo" name="alkey_jairo" value="" onkeydown="return EnterEvent(event.keyCode,'jairo_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">雑誌名:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="titlekey_ja_jairo" name="titlekey_ja_jairo" value="" onkeydown="return EnterEvent(event.keyCode,'jairo_expart', 'search');" />
+		  	</div>
+		  	
+			  	<div class="col">
+					<span class="title">一覧表示件数:</span>
+					<select id="jairo_disp" name="jairo_disp">
+						
+							<option value="20" selected="selected">20</option>
+						
+							<option value="50">50</option>
+						
+							<option value="100">100</option>
+						
+							
+						
+							
+						
+					</select>
+			  	</div>
+			
+		</div><!--/#search-condition-->
+		<div class="col-md-3">
+			<div class="search-ad-btn">
+				<button type="button" class="btn btn-primary btn-left-square" onclick="SearchClick('jairo_expart', 'search');return false;"><span class="icon-opac_search size-small"></span>検索</button>
+				<button type="button" class="btn btn-clear" onclick="jairoclearClick('expart', '');return false;"><span class="glyphicon glyphicon-erase"></span>クリア</button>
+			</div><!--/.search-ad-btn-->
+		</div>
+	</div>
+</div><!-- /.jairo-advanced -->
+									</div>
+								
+									
+									<div id="panel_advanced_12" class="tab-pane">
+										
+
+
+<div class="ndl-advanced sub-panel">
+	<div class="row">
+		<div class="col-md-9 search-condition">
+			<div class="col">
+				<span class="title">全ての項目:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="default_ndl" name="default_ndl" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">タイトル:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="titlekey_ja_ndl" name="titlekey_ja_ndl" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">タイトル(完全形):</span>
+				<input type="text" class="text_kywd" maxlength="256" id="ftitlekey_ndl" name="ftitlekey_ndl" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+		  	</div>
+		  	<div class="col">
+				<span class="title">著者名:</span>
+				<input type="text" class="text_kywd" maxlength="256" id="alkey_ndl" name="alkey_ndl" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+		  	</div>
+		</div><!--/#search-condition-->
+		<div class="col-md-3">
+			<div class="search-ad-btn">
+				<button type="button" class="btn btn-primary btn-left-square" onclick="SearchClick('ndl_expart', 'search');return false;"><span class="icon-opac_search size-small"></span>検索</button>
+				<button type="button" class="btn btn-clear" onclick="ndlclearClick();return false;"><span class="glyphicon glyphicon-erase"></span>クリア</button>
+			</div><!--/.search-ad-btn-->
+		</div>
+	</div>
+	<div class="row">
+		<div class="search-option">
+			<div class="clearfix">
+			  	<div class="col">
+					<span class="title">出版者:</span>
+					<input type="text" class="text_kywd" maxlength="128" id="pubkey_ndl" name="pubkey_ndl" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+			  	</div>
+			  	<div class="col">
+					<span class="title">件名:</span>
+					<input type="text" class="text_kywd" maxlength="128" id="shkey_ndl" name="shkey_ndl" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+				</div>
+			</div>
+		  	<div class="clearfix">
+			  	<div class="col">
+					<span class="title">ISBN:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="isbn_ndl" name="isbn_ndl" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+			  	</div>
+			  	<div class="col">
+					<span class="title">ISSN:</span>
+					<input type="text" class="text_kywd" maxlength="20" id="issn_ndl" name="issn_ndl" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+			  	</div>
+			</div>
+		  	<div class="clearfix">
+		  		<div class="col">
+					<span class="title">出版年:</span>
+					<input type="text" class="text_year" name="year1_ndl" id="year1_ndl" maxlength="4" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+		 			&ndash;
+		    		<input type="text" class="text_year" name="year2_ndl" id="year2_ndl" maxlength="4" value="" onkeydown="return EnterEvent(event.keyCode,'ndl_expart', 'search');" />
+				</div>
+			</div>
+			
+				<div class="clearfix">
+				
+					<div class="col">
+						<span class="title">並び順:</span>
+						<select name="sort_ndl" id="sort_ndl">
+							
+			        			<option value="issued_date/sort.descending">出版年(降順)</option>
+			      			
+			        			<option value="issued_date/sort.ascending">出版年(昇順)</option>
+			      			
+			        			<option value="title/sort.ascending">タイトル(昇順)</option>
+			      			
+			        			<option value="title/sort.descending">タイトル(降順)</option>
+			      			
+			        			<option value="creator/sort.ascending">著者名(昇順)</option>
+			      			
+			        			<option value="creator/sort.descending">著者名(降順)</option>
+			      			
+			    		</select>
+					</div>
+				
+			  	
+				  	<div class="col nextcol">
+						<span class="title">一覧表示件数:</span>
+						<select name="ndl_disp" id="ndl_disp">
+							
+								<option value="20" selected="selected">20</option>
+							
+								<option value="50">50</option>
+							
+								<option value="100">100</option>
+							
+								<option value="200">200</option>
+							
+								<option value="500">500</option>
+							
+						</select>
+				  	</div>
+				
+				</div>
+			
+		</div>
+	</div>
+</div><!-- /.ndl-advanced -->
+									</div>
+								
+								
+									
+								
+							</div>
+						</div>
+						
+					</div>
+					<br />
+					<div id="search_amazon">
+						<span class="title">
+							<label for="index_amazon1s">
+								<input type="radio" name="index_amazon_s" id="index_amazon1s" value="Books" checked="checked"/> 和書
+							</label>
+							<label for="index_amazon2s">
+								<input type="radio" name="index_amazon_s" id="index_amazon2s" value="ForeignBooks"/> 洋書
+							</label>
+						</span>
+						<input type="hidden" name="node_s" value="" />
+		  			</div>
+				</div>
+			</div>
+		</div><!--/#archive-search-->
+
+		
+		<script type="text/javascript">
+		//<![CDATA[
+			$(function() {
+				$('#text_kywd').autocomplete({
+					source: function( req, res ) {
+						if ($('#text_kywd').hasClass("suggestEnabled")) {
+							$.ajax({
+								url: "/opac/opac_suggest/",
+								dataType: "json",
+								data: {
+									q_word: $('#text_kywd').val()
+								},
+								success: function(data) {
+									res(data);
+								},
+								error: function(XMLHttpRequest, textStatus, errorThrown) {
+									res([]);
+								}
+							});
+						} else {
+							res([]);
+						}
+					}
+				});
+				$('#text_kywd').addClass('suggestEnabled');
+				modeTabClick('0');
+				searchTabClick('0');
+				
+					searchAddTabClick('0');
+				
+			});
+
+			
+				function searchAddTabClick(cmode) {
+					var is_addtab = false;
+
+					
+						if (cmode == '21') {
+							is_addtab = true;
+
+							
+								$("#searchmode_tab").hide();
+								$("#search_amazon").hide();
+								$("#search_pubmed").hide();
+								$("#search_medline").hide();
+								
+									$("#tab_simple").children().click();
+								
+							
+							if ($("input:hidden[name=smode]").val() == '0') {
+								$("#panel_simple_21").show();
+								
+									w_init();
+								
+							} else {
+								$("#panel_simple_21").hide();
+								
+							}
+						} else {
+							$("#panel_simple_21").hide();
+						}
+					
+					if (is_addtab) {
+						$("#search-simple-area").hide();
+					} else {
+						$("#search-simple-area").show();
+					}
+				}
+
+				function modeAddTabClick(smode) {
+					
+						if ($("input:hidden[name=cmode]").val() == '21') {
+							if (smode == '0') {
+								
+									w_init();
+								
+							} else {
+								
+							}
+						}
+					
+				}
+			
+		//]]>
+		</script>
+
+		<div class="info_file_block">
+			
+
+		</div><!-- /info_file_block -->
+	</div><!-- /search_opac -->
+</form>
+
+</div>
+
+			</div>
+
+			
+
+			
+				
+
+
+
+
+<div id="opac_info">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span class="icon-opac_info"></span> お知らせ</h3>
+		</div>
+		<div class="panel-body">
+			
+			<ul class="info-list">
+				
+					<li>
+						<span class="opac_info-date">2026.06.05</span>
+						<span class="label" style="color:#4D4D4D;background-color:#FFCCFF;">重要</span>
+						<span class="opac_info-text" style="word-break:break-all;">所在が「総合図・自動書庫」の資料は自動書庫不具合のため利用停止中です。そのため一時的にOPAC上で非表示としています。詳細については総合図書館Webサイトのニュースをご参照ください。ご不便おかけして誠に申し訳ございませんが何卒ご容赦ください。</span>
+					</li>
+				
+					<li>
+						<span class="opac_info-date">2026.05.27</span>
+						<span class="label" style="color:#4D4D4D;background-color:#FFCCFF;">重要</span>
+						<span class="opac_info-text" style="word-break:break-all;"><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">先月以降、東京大学OPACにおいて接続が不安定（タイムアウト等）となる事象が発生しております。</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">外部からの大量アクセスへの対策として、同一IPからの過度なアクセスを検知した場合に一時的なアクセス制限（短時間で自動解除）を行っており、その影響で接続しづらくなる場合があります。</span></font></div><div style=""><font face="Arial, Verdana"><span style="font-size: 13.3333px;">ご迷惑をおかけして恐縮ですが、つながりにくい場合は、しばらく時間をおいて再度お試しください。</span></font></div></span>
+					</li>
+				
+			</ul>
+			<a class="btn btn-xs btn-secondary pull-right" href="/opac/opac_opinfo/?lang=0">+&nbsp;もっと見る</a>
+		</div>
+	</div><!--/.panel-->
+</div><!--/#opac_info-->
+			
+
+			
+				<div id="info">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title"><span class="icon-opac_info"></span> ヘルプメッセージ</h3>
+						</div>
+						<div class="panel-body">
+							<p>■ISBNで検索した場合、本来利用可能であるにもかかわらず、一部の電子ブックで検索結果に表示されない事例が確認されています。タイトルでの検索もお試しください。</p>
+
+<p>■メンテナンスのため、毎日午前3時から10分程度、東京大学OPACを検索しても検索結果が0件となる場合があります。</p>
+
+<!-- <p>■<a href="https://www.lib.u-tokyo.ac.jp/ja/library/contents/news/20200228" target="_blank">【重要】感染症対策等による各図書館・室の臨時休館、サービス変更情報</a></p> -->
+<hr />
+
+<p>
+■東京大学OPACでは、本学が所蔵するすべての雑誌と1986年以降に収集された図書を検索できます。（1986年以前に収集された図書のデータも随時入力中）
+</p>
+<p>
+■検索タブを切り替えると、OPAC以外のデータベースを検索できます。<br>
+&nbsp;※　一部の検索タブでは、元のデータベースから検索対象範囲を絞り込んで検索をしています。<br>
+&nbsp;- <a href="https://ci.nii.ac.jp/books">CiNii Books</a> : 日本国内の大学図書館等が所蔵する図書や雑誌<br>
+&nbsp;- <a href="https://cir.nii.ac.jp/">CiNii Research</a> : 日本国内の学術論文　※検索タブでは学術論文のみ検索可能<br>
+&nbsp;- <a href="https://irdb.nii.ac.jp/">IRDB</a> : 日本国内の学術機関が公開する学術成果(学位論文、紀要、学術論文等)<br>
+&nbsp;- <a href="https://ndlsearch.ndl.go.jp/">国立国会図書館サーチ</a> : 国立国会図書館および公共図書館等の蔵書<br>
+&nbsp;- <a href="https://www.worldcat.org/">WorldCat</a> : 海外の図書館が所蔵する図書や雑誌
+</p>
+
+<p>
+■東京大学の学位論文は下記で検索できます。<br>
+平成24(2012)年度まで：<a href="http://gakui.dl.itc.u-tokyo.ac.jp/" target="_blank">東京大学学位論文データベース</a><br>
+平成25(2013)年度以降：<a href="https://repository.dl.itc.u-tokyo.ac.jp/" target="_blank">東京大学学術機関リポジトリ(UTokyo Repository)</a> 
+</p>
+
+<!-- 
+<p>■仮想書架：類似テーマの本をまとめて表示して紹介する機能です。請求記号が前後の図書を20冊ずつ表示します。<br>
+（※表示には数分かかります。）
+</p>
+ -->
+						</div>
+					</div><!--/.panel-->
+				</div><!--/#info-->
+			
+
+			
+
+<script type="text/javascript">
+//<![CDATA[
+$(function() {
+	
+		$(".column_widget").sortable({
+			connectWith: ".column_widget",
+			handle: ".panel-heading",
+			start: function(e, ui) {
+				ui.helper.height(1);
+			},
+			stop: function() {
+				outWidgetAll();
+			},
+			helper: function(e, ui){
+				var clone = $(ui).clone();
+				clone.css('position','absolute');
+				return clone.get(0);
+			},
+		});
+		
+	    	
+				getWidgetData('calendar', '/opac/myopac/calendar/widget/', '', '0', '0', 'この機能を隠しますか？');
+					
+			
+		
+	    	
+		
+	
+});
+
+//]]>
+</script>
+
+	<div class="clearfix">
+		
+			<form id="frm_widget" method="post" action="./" onsubmit="return false"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='b3f8ef9b186d42435230f76c4e213570' /></div>
+				<input type="hidden" name="lang" value="0" />
+				<input type="hidden" name="reqCode" value="" />
+				<input type="hidden" name="sortWidget" value="" />
+				<input type="hidden" name="selCols" value="2" />
+				<input type="hidden" name="selCountercd" value="0" />
+				<p class="pull-left hidden-xs">
+					
+						<em>表示列数:</em>
+					
+					<span class="my-opac-select-field">
+						
+							<select name="cols" id="cols" onchange="changeRowsWidget();">
+							
+							    <option value="1">1列表示</option>
+							
+							    <option value="2" selected="selected">2列表示</option>
+							
+							</select>
+						
+
+						
+					</span>
+				</p>
+			</form>
+		
+		
+			<form id="frm_counter" method="post" action="./" onsubmit="return false"><div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='b3f8ef9b186d42435230f76c4e213570' /></div>
+				<input type="hidden" name="lang" value="0" />
+				<input type="hidden" name="reqCode" value="change" />
+				<input type="hidden" name="selCols" value="2" />
+				<input type="hidden" name="selCountercd" value="0" />
+				
+				<p class="pull-right">
+					<em>選択カウンター:</em>
+					<span>
+						<select name="countercd" id="countercd" onchange="changeCounter();">
+						
+							<option value="0" selected="selected">すべてのカウンタ</option>
+						
+							<option value="100001">総合図書館</option>
+						
+							<option value="100002">総図書庫</option>
+						
+							<option value="100111">工情・工１Ａ</option>
+						
+							<option value="100112">工情・工１Ｂ</option>
+						
+							<option value="100113">工情・工２</option>
+						
+							<option value="100115">工情・工３</option>
+						
+							<option value="100117">工情・工４</option>
+						
+							<option value="100118">工情・工５</option>
+						
+							<option value="100119">工情・工６</option>
+						
+							<option value="10011B">工情・工７</option>
+						
+							<option value="10011C">工情・工１４</option>
+						
+							<option value="100200">理学図書館</option>
+						
+							<option value="100410">法学部</option>
+						
+							<option value="100430">医学図書館</option>
+						
+							<option value="100480">文図</option>
+						
+							<option value="100550">経図</option>
+						
+							<option value="100570">育図書</option>
+						
+							<option value="100580">薬図</option>
+						
+							<option value="100640">東文研</option>
+						
+							<option value="100650">社研</option>
+						
+							<option value="100660">情報学環</option>
+						
+							<option value="100680">史料編さん所</option>
+						
+							<option value="200500">農図</option>
+						
+							<option value="200630">地震研図書室</option>
+						
+							<option value="300300">駒場図</option>
+						
+							<option value="300340">教養自図</option>
+						
+							<option value="300370">養アメ</option>
+						
+							<option value="300800">数理</option>
+						
+							<option value="400670">生研</option>
+						
+							<option value="400760">先端技術研究センタ</option>
+						
+							<option value="500700">宇宙線研図</option>
+						
+							<option value="500720">物性研図</option>
+						
+							<option value="500730">大海研図</option>
+						
+							<option value="500840">柏図書館</option>
+						
+							<option value="500890">柏数物</option>
+						
+							<option value="600610">医科研・図</option>
+						
+						</select>
+					</span>
+				</p>
+				
+			</form>
+		
+	</div>
+	<div class="row">
+		
+			<div id="widget_col_3" class="column_widget col-sm-6">
+				
+					<div class="content_widget">
+						<div id="calendar_widget" class="panel panel-primary">
+							<div class="panel-heading"></div>
+							<div class="panel-body"></div>
+						</div>
+					</div>
+				
+			</div>
+		
+			<div id="widget_col_4" class="column_widget col-sm-6">
+				
+			</div>
+		
+	</div>
+
+		</div>
+	
+
+
+			</div><!-- /maCont -->
+		</div><!-- /contens -->
+	</div><!-- /content-wrapper -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="opac_detail_aera"></div><!-- この行だけは消してはいけない -->
+
+<footer id="footer" class="hidden-print">
+	<nav id="footer-nav">
+		<div class="container-fluid hidden-sm hidden-xs">
+				<!-- user-service -->
+				<div class="user-service fnav">
+					
+					
+						
+							
+								<p class="title"><span class="icon-opac_user-service"></span> MyOPACサービス</p>
+									
+										
+											
+												<ul>
+											
+
+											
+												<li class="0"><a href="/opac/odr_stat/?lang=0">貸出・予約状況照会</a></li>
+											
+												<li class="0"><a href="/opac/ill/?lang=0">学外への文献複写・貸借申込</a></li>
+											
+												<li class="0"><a href="/opac/ill/?reqCode=list&amp;lang=0">文献複写・貸借申込状況照会</a></li>
+											
+											</ul>
+										
+									
+										
+											
+												<ul class="fnav-line">
+											
+
+											
+												<li class="1"><a href="/opac/bok/?lang=0">図書購入申込（各自予算）</a></li>
+											
+												<li class="1"><a href="/opac/bok_req/?lang=0">図書購入リクエスト</a></li>
+											
+												<li class="1"><a href="/opac/bok/?reqCode=list&amp;lang=0">図書購入申込状況照会</a></li>
+											
+											</ul>
+										
+									
+										
+											
+												<ul class="fnav-line">
+											
+
+											
+												<li class="2"><a href="/opac/password/?lang=0">パスワード変更（図書館アカウントのみ）</a></li>
+											
+												<li class="2"><a href="/opac/us_info/?lang=0">利用者情報編集</a></li>
+											
+											</ul>
+										
+									
+							
+						
+					
+					
+				</div><!-- /.user-service -->
+				<!-- user service -->
+
+			<!-- kanren service -->
+			<div class="related fnav fnav-line">
+				
+					
+						<p class="title"><span class="icon-opac_connection"></span> 関連</p>
+							<ul class="foRig">
+							
+							  <li><a href="https://www.lib.u-tokyo.ac.jp/ja/library/contents/database" target="_blank" rel="noopener noreferrer"
+							  		>データベース一覧
+							  		</a></li>
+							
+							  <li><a href="http://tokyo.summon.serialssolutions.com/jp/#!/" target="_blank" rel="noopener noreferrer"
+							  		>TREE（まとめて検索）
+							  		</a></li>
+							
+							  <li><a href="https://repository.dl.itc.u-tokyo.ac.jp/" target="_blank" rel="noopener noreferrer"
+							  		>Repository
+							  		</a></li>
+							
+							  <li><a href="https://da.dl.itc.u-tokyo.ac.jp/portal/" target="_blank" rel="noopener noreferrer"
+							  		>デジタルアーカイブ
+							  		</a></li>
+							
+							  <li><a href="https://www.lib.u-tokyo.ac.jp/ja" target="_blank" rel="noopener noreferrer"
+							  		>附属図書館
+							  		</a></li>
+							
+							</ul>
+						
+				
+			</div><!-- /related -->
+		<!-- kanren service end -->
+
+		</div>
+
+		
+	</nav><!-- /#footer-nav -->
+
+	<div id="copyright">
+		
+			
+				<p>OPAC、利用に関する問い合わせ：　https://opac.dl.itc.u-tokyo.ac.jp/opac/ask/ </p>
+			
+		
+	</div>
+</footer>
+<a href="#" class="pagetop hidden-print" title="Back to Page Top"><span class="icon-opac_btn-top"></span></a>
+</div>
+</body>
+</html>
