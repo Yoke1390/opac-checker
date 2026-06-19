@@ -341,6 +341,7 @@ async function startScan(){
   els.vpIdle.style.display='none';
   els.viewport.classList.remove('idle'); els.viewport.classList.add('scanning');
   els.scanBtn.textContent='読み取りを止める';
+  window.scrollTo({top:0, behavior:'smooth'});
   try{
     await html5Qr.start(
       { facingMode:'environment' },
