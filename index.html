@@ -76,6 +76,20 @@
   </footer>
 </div>
 
+<!-- デバッグ：右下の目立たないボタンで開閉 -->
+<button id="dbgBtn" aria-label="デバッグ"></button>
+<section id="dbgPanel" hidden>
+  <div class="dbg-head">
+    <span>デバッグログ</span>
+    <span class="dbg-actions">
+      <button id="dbgCopy">コピー</button>
+      <button id="dbgClear">クリア</button>
+      <button id="dbgClose">閉じる</button>
+    </span>
+  </div>
+  <pre id="dbgLog"></pre>
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 <script src="app.js"></script>
 <script>

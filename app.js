@@ -15,7 +15,44 @@ const els = {
   result:$('result'),
   cover:$('cover'), bTitle:$('bTitle'), bAuthor:$('bAuthor'), bPub:$('bPub'), bIsbn:$('bIsbn'),
   actions:$('actions'),
+  dbgBtn:$('dbgBtn'), dbgPanel:$('dbgPanel'), dbgLog:$('dbgLog'),
+  dbgClear:$('dbgClear'), dbgCopy:$('dbgCopy'), dbgClose:$('dbgClose'),
 };
+
+/* ---------- デバッグログ ----------
+   ページ読込時から常時バッファに記録し、右下の目立たないボタンでパネル表示/非表示。
+   console.log/warn/error と未捕捉エラーも拾う。 */
+const dbg = (() => {
+  const MAX = 400;
+  const buf = [];
+  let listEl = null, panelEl = null, open = false;
+  const fmt = a => {
+    if(a instanceof Error) return a.name + ': ' + a.message + (a.stack ? ('\n' + a.stack) : '');
+    if(a && typeof a === 'object'){ try{ return JSON.stringify(a); }catch(e){ return String(a); } }
+    return String(a);
+  };
+  const line = e => `[${e.time}] ${e.level.toUpperCase()} ${e.msg}`;
+  function render(){ if(listEl){ listEl.textContent = buf.map(line).join('\n'); listEl.scrollTop = listEl.scrollHeight; } }
+  function push(level, args){
+    buf.push({ time:new Date().toISOString().slice(11,23), level, msg:Array.from(args).map(fmt).join(' ') });
+    if(buf.length > MAX) buf.shift();
+    if(open) render();
+  }
+  return {
+    log:(...a)=>push('log',a), warn:(...a)=>push('warn',a), error:(...a)=>push('error',a),
+    bind(panel, list){ panelEl=panel; listEl=list; },
+    toggle(){ open=!open; if(panelEl) panelEl.hidden=!open; if(open) render(); return open; },
+    clear(){ buf.length=0; render(); },
+    text(){ return buf.map(line).join('\n'); },
+  };
+})();
+/* console をフック（元の出力は保持）。dbgはconsoleを呼ばないので無限ループしない */
+['log','warn','error'].forEach(k => {
+  const orig = console[k] ? console[k].bind(console) : ()=>{};
+  console[k] = (...a) => { try{ dbg[k](...a); }catch(e){} orig(...a); };
+});
+window.addEventListener('error', e => dbg.error('window.onerror:', e.message, (e.filename||'')+':'+(e.lineno||'')));
+window.addEventListener('unhandledrejection', e => dbg.error('unhandledrejection:', (e.reason && (e.reason.message||e.reason)) || e.reason));
 
 /* ---------- ISBN 正規化・変換 ---------- */
 function normalizeIsbn(raw){
@@ -161,38 +198,51 @@ function showToast(msg){
 let html5Qr=null, scanning=false;
 async function startScan(){
   if(scanning){ await stopScan(); return; }
-  if(typeof Html5Qrcode === 'undefined'){ showToast('読取ライブラリを読み込めません。通信環境をご確認ください。'); return; }
+  if(typeof Html5Qrcode === 'undefined'){ dbg.error('Html5Qrcode 未読込'); showToast('読取ライブラリを読み込めません。通信環境をご確認ください。'); return; }
   const fmts = (window.Html5QrcodeSupportedFormats)
     ? [Html5QrcodeSupportedFormats.EAN_13, Html5QrcodeSupportedFormats.EAN_8, Html5QrcodeSupportedFormats.UPC_A]
     : undefined;
-  html5Qr = new Html5Qrcode('reader', fmts ? { formatsToSupport: fmts, verbose:false } : { verbose:false });
   els.vpIdle.style.display='none';
   els.viewport.classList.remove('idle'); els.viewport.classList.add('scanning');
   els.scanBtn.textContent='読み取りを止める';
   window.scrollTo({top:0, behavior:'smooth'});
-  try{
-    await html5Qr.start(
-      // 高解像度で取得＝バー1本あたりのピクセル数を確保（小さく写るバーコード対策）
-      { facingMode:'environment', width:{ideal:1920}, height:{ideal:1080}, advanced:[{focusMode:'continuous'}] },
-      // 1Dバーコード向けに「広く・低め」の走査領域（ビューファインダ幅に追従）
-      { fps:10, qrbox:(w,h)=>{ const ww=Math.round(Math.min(w,520)*0.9); return { width:ww, height:Math.round(ww*0.45) }; }, aspectRatio:1.6 },
-      onScan, ()=>{}
-    );
-    scanning=true;
-    setupZoom();
-  }catch(e){
-    scanning=false; els.scanBtn.textContent='カメラで読み取る';
-    els.viewport.classList.remove('scanning'); els.viewport.classList.add('idle'); els.vpIdle.style.display='flex';
-    showToast('カメラを起動できませんでした。HTTPS環境とカメラ許可が必要です。');
+
+  // 1Dバーコード向けに「広く・低め」の走査領域（ビューファインダ幅に追従）
+  const config = { fps:10, qrbox:(w,h)=>{ const ww=Math.round(Math.min(w,520)*0.9); return { width:ww, height:Math.round(ww*0.45) }; }, aspectRatio:1.6 };
+  // まず高解像度（バー1本あたりの画素を確保）、失敗したら以前から動く最小構成にフォールバック
+  const attempts = [
+    { facingMode:'environment', width:{ideal:1920}, height:{ideal:1080}, advanced:[{focusMode:'continuous'}] },
+    { facingMode:'environment' },
+  ];
+  for(let i=0;i<attempts.length;i++){
+    try{
+      dbg.log('camera start 試行', i+1, attempts[i]);
+      html5Qr = new Html5Qrcode('reader', fmts ? { formatsToSupport: fmts, verbose:false } : { verbose:false });
+      await html5Qr.start(attempts[i], config, onScan, ()=>{});
+      scanning=true;
+      dbg.log('camera 起動成功 (試行', i+1, ')');
+      setupZoom();
+      return;
+    }catch(e){
+      dbg.error('camera start 失敗 (試行'+(i+1)+'):', e);
+      try{ await html5Qr.clear(); }catch(_){}
+      html5Qr=null;
+      if(e && e.name === 'NotAllowedError'){ break; } // 権限拒否は再試行しても無駄
+    }
   }
+  // 全試行が失敗
+  scanning=false; els.scanBtn.textContent='カメラで読み取る';
+  els.viewport.classList.remove('scanning'); els.viewport.classList.add('idle'); els.vpIdle.style.display='flex';
+  showToast('カメラを起動できませんでした。HTTPS環境とカメラ許可が必要です。');
 }
 /* ---------- ズーム（対応端末のみ）---------- */
 function setupZoom(){
   els.zoomRow.hidden = true;
   try{
     const caps = html5Qr.getRunningTrackCapabilities();
+    dbg.log('track capabilities:', caps);
     const z = caps && caps.zoom;
-    if(!z || !z.max) return;                          // 非対応端末はスライダーを出さない
+    if(!z || !z.max){ dbg.log('zoom 非対応'); return; } // 非対応端末はスライダーを出さない
     const min = z.min || 1, max = z.max, step = z.step || 0.1;
     const init = Math.min(max, Math.max(min, 2));      // 既定2x（端末上限でクランプ）
     els.zoom.min = min; els.zoom.max = max; els.zoom.step = step; els.zoom.value = init;
@@ -227,3 +277,15 @@ els.manualBtn.addEventListener('click', () => {
 });
 els.manualInput.addEventListener('keydown', e => { if(e.key==='Enter') els.manualBtn.click(); });
 window.addEventListener('pagehide', stopScan);
+
+/* ---------- デバッグパネル ---------- */
+dbg.bind(els.dbgPanel, els.dbgLog);
+els.dbgBtn.addEventListener('click', () => dbg.toggle());
+els.dbgClose.addEventListener('click', () => dbg.toggle());
+els.dbgClear.addEventListener('click', () => dbg.clear());
+els.dbgCopy.addEventListener('click', async () => {
+  const t = dbg.text();
+  try{ await navigator.clipboard.writeText(t); showToast('ログをコピーしました'); }
+  catch(e){ showToast('コピーできませんでした'); }
+});
+dbg.log('起動', navigator.userAgent);
