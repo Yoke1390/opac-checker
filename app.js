@@ -10,6 +10,7 @@ const $ = id => document.getElementById(id);
 const els = {
   viewport:$('viewport'), vpIdle:$('vpIdle'), reader:$('reader'),
   scanBtn:$('scanBtn'), toast:$('toast'),
+  zoomRow:$('zoomRow'), zoom:$('zoom'),
   manualInput:$('manualInput'), manualBtn:$('manualBtn'),
   result:$('result'),
   cover:$('cover'), bTitle:$('bTitle'), bAuthor:$('bAuthor'), bPub:$('bPub'), bIsbn:$('bIsbn'),
@@ -171,20 +172,38 @@ async function startScan(){
   window.scrollTo({top:0, behavior:'smooth'});
   try{
     await html5Qr.start(
-      { facingMode:'environment' },
-      { fps:10, qrbox:{width:280,height:170}, aspectRatio:1.6 },
+      // 高解像度で取得＝バー1本あたりのピクセル数を確保（小さく写るバーコード対策）
+      { facingMode:'environment', width:{ideal:1920}, height:{ideal:1080}, advanced:[{focusMode:'continuous'}] },
+      // 1Dバーコード向けに「広く・低め」の走査領域（ビューファインダ幅に追従）
+      { fps:10, qrbox:(w,h)=>{ const ww=Math.round(Math.min(w,520)*0.9); return { width:ww, height:Math.round(ww*0.45) }; }, aspectRatio:1.6 },
       onScan, ()=>{}
     );
     scanning=true;
+    setupZoom();
   }catch(e){
     scanning=false; els.scanBtn.textContent='カメラで読み取る';
     els.viewport.classList.remove('scanning'); els.viewport.classList.add('idle'); els.vpIdle.style.display='flex';
     showToast('カメラを起動できませんでした。HTTPS環境とカメラ許可が必要です。');
   }
 }
+/* ---------- ズーム（対応端末のみ）---------- */
+function setupZoom(){
+  els.zoomRow.hidden = true;
+  try{
+    const caps = html5Qr.getRunningTrackCapabilities();
+    const z = caps && caps.zoom;
+    if(!z || !z.max) return;                          // 非対応端末はスライダーを出さない
+    const min = z.min || 1, max = z.max, step = z.step || 0.1;
+    const init = Math.min(max, Math.max(min, 2));      // 既定2x（端末上限でクランプ）
+    els.zoom.min = min; els.zoom.max = max; els.zoom.step = step; els.zoom.value = init;
+    els.zoomRow.hidden = false;
+    html5Qr.applyVideoConstraints({ advanced:[{ zoom: init }] }).catch(()=>{});
+  }catch(e){ els.zoomRow.hidden = true; }
+}
 async function stopScan(){
   if(html5Qr && scanning){ try{ await html5Qr.stop(); }catch(e){} try{ await html5Qr.clear(); }catch(e){} }
   scanning=false; html5Qr=null;
+  els.zoomRow.hidden = true;
   els.viewport.classList.remove('scanning'); els.viewport.classList.add('idle');
   els.vpIdle.style.display='flex'; els.scanBtn.textContent='カメラで読み取る';
 }
@@ -198,6 +217,9 @@ async function onScan(text){
 
 /* ---------- イベント ---------- */
 els.scanBtn.addEventListener('click', startScan);
+els.zoom.addEventListener('input', () => {
+  if(html5Qr) html5Qr.applyVideoConstraints({ advanced:[{ zoom: Number(els.zoom.value) }] }).catch(()=>{});
+});
 els.manualBtn.addEventListener('click', () => {
   const code = normalizeIsbn(els.manualInput.value);
   if(isPriceBarcode(code)){ showToast('価格バーコードです。ISBN（978始まり）を入力してください。'); return; }

@@ -120,6 +120,12 @@ input[type=text]:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3
 
 .scan-controls{display:flex;gap:8px;margin-top:10px}
 .scan-controls .btn{flex:1}
+
+/* ズームスライダー（対応端末でのみ表示）*/
+.zoom-row{display:flex;align-items:center;gap:10px;margin-top:10px;padding:8px 12px;background:var(--surface);border:1px solid var(--border);border-radius:11px}
+.zoom-row[hidden]{display:none}
+.zoom-ico{width:18px;height:18px;color:var(--text-mute);flex:none}
+.zoom-row input[type=range]{flex:1;accent-color:var(--brand);height:24px}
 .toast{margin-top:10px;font-size:13px;padding:9px 12px;border-radius:10px;background:var(--warn-fill);color:var(--warn-ink);display:none}
 .toast.show{display:block}
 
